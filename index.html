@@ -2099,12 +2099,12 @@
     <div id="login-screen" class="login-screen">
         <div class="login-container">
             <div class="login-logo">🎯</div>
-            <h1 class="login-title">Mission Control</h1>
-            <p class="login-subtitle">Task & Project Management Dashboard</p>
+            <h1 class="login-title">任务控制台</h1>
+            <p class="login-subtitle">任务与项目管理仪表盘</p>
 
             <div class="login-card">
-                <h2>🔐 Login Required</h2>
-                <p>Connect your GitHub account to access the dashboard.</p>
+                <h2>🔐 需要登录</h2>
+                <p>连接您的 GitHub 账号以访问仪表板。</p>
 
                 <div class="login-steps">
                     <div class="login-step">
@@ -2399,11 +2399,11 @@
                     Mission Control uses a Kanban-style board with 5 columns:
                 </p>
                 <ul style="color: var(--text-secondary); line-height: 1.8; margin-left: 1.5rem;">
-                    <li><strong>🔄 Permanent</strong> - Repeating tasks (daily, weekly checks)</li>
-                    <li><strong>📋 Backlog</strong> - Tasks waiting to be started</li>
-                    <li><strong>🚀 In Progress</strong> - Currently being worked on</li>
-                    <li><strong>👀 Review</strong> - Done, awaiting approval</li>
-                    <li><strong>✅ Done</strong> - Completed tasks</li>
+                    <li><strong>🔄 固定任务</strong> - 重复性任务（每日、每周检查）</li>
+                    <li><strong>📋 待办</strong> - 等待开始的任务</li>
+                    <li><strong>🚀 进行中</strong> - 当前正在处理的任务</li>
+                    <li><strong>👀 审核</strong> - 已完成，等待批准</li>
+                    <li><strong>✅ 已完成</strong> - 完成的任务</li>
                 </ul>
             </div>
 
@@ -2592,39 +2592,39 @@
     <div class="modal-overlay" id="settings-modal" onclick="if(event.target===this)hideSettingsModal()">
         <div class="modal" style="max-width: 500px;">
             <div class="modal-header">
-                <h2 class="modal-title">⚙️ Settings</h2>
+                <h2 class="modal-title">⚙️ 设置</h2>
                 <button class="modal-close" onclick="hideSettingsModal()">&times;</button>
             </div>
             <div class="modal-body">
-                <h3 style="margin-bottom: 12px; font-size: 1rem;">🌐 OpenClaw Gateway</h3>
+                <h3 style="margin-bottom: 12px; font-size: 1rem;">🌐 OpenClaw 网关</h3>
                 <div style="margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid var(--border-color);">
-                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 8px;">Connect to your OpenClaw Gateway for live cron management.</p>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 8px;">连接到您的 OpenClaw 网关以进行实时 cron 管理。</p>
                     <div style="display: flex; gap: 8px;">
                         <input type="text" class="form-input" id="gateway-url-input" placeholder="http://localhost:18789" style="flex: 1;">
-                        <button class="btn btn-primary" onclick="saveGatewayUrl()">Connect</button>
+                        <button class="btn btn-primary" onclick="saveGatewayUrl()">连接</button>
                     </div>
                     <div id="gateway-status" style="font-size: 0.8rem; margin-top: 6px; color: var(--text-secondary);"></div>
                     <div style="margin-top: 10px;">
-                        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 8px;">Gateway Token (from gateway.auth.token in config)</p>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 8px;">网关令牌（来自配置中的 gateway.auth.token）</p>
                         <div style="display: flex; gap: 8px;">
-                            <input type="password" class="form-input" id="gateway-token-input" placeholder="Gateway Auth Token" style="flex: 1;">
-                            <button class="btn btn-secondary" onclick="toggleGatewayTokenVisibility()" title="Show/Hide">👁️</button>
-                            <button class="btn btn-primary" onclick="saveGatewayToken()">Save</button>
+                            <input type="password" class="form-input" id="gateway-token-input" placeholder="网关认证令牌" style="flex: 1;">
+                            <button class="btn btn-secondary" onclick="toggleGatewayTokenVisibility()" title="显示/隐藏">👁️</button>
+                            <button class="btn btn-primary" onclick="saveGatewayToken()">保存</button>
                         </div>
                         <div id="gateway-token-status" style="font-size: 0.8rem; margin-top: 6px; color: var(--text-secondary);"></div>
                     </div>
                 </div>
 
-                <h3 style="margin-bottom: 12px; font-size: 1rem;">Projects</h3>
+                <h3 style="margin-bottom: 12px; font-size: 1rem;">项目</h3>
                 <div id="projects-list" class="projects-list"></div>
 
                 <div class="add-project-form" style="margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border-color);">
-                    <h4 style="margin-bottom: 8px; font-size: 0.9rem;" id="project-form-title">Add New Project</h4>
+                    <h4 style="margin-bottom: 8px; font-size: 0.9rem;" id="project-form-title">添加新项目</h4>
                     <div style="display: grid; gap: 8px;">
-                        <input type="text" class="form-input" id="new-project-id" placeholder="ID (z.B. marketing)">
-                        <input type="text" class="form-input" id="new-project-name" placeholder="Name (z.B. Marketing)">
+                        <input type="text" class="form-input" id="new-project-id" placeholder="ID (例如 marketing)">
+                        <input type="text" class="form-input" id="new-project-name" placeholder="名称 (例如 市场营销)">
                         <div style="margin-bottom: 8px;">
-                            <label style="font-size: 0.8rem; color: var(--text-secondary);">Icon</label>
+                            <label style="font-size: 0.8rem; color: var(--text-secondary);">图标</label>
                             <div class="emoji-picker" style="display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px;">
                                 <button type="button" class="emoji-btn" onclick="selectEmoji('📁')">📁</button>
                                 <button type="button" class="emoji-btn" onclick="selectEmoji('📊')">📊</button>
@@ -2641,14 +2641,14 @@
                                 <button type="button" class="emoji-btn" onclick="selectEmoji('🏠')">🏠</button>
                                 <button type="button" class="emoji-btn" onclick="selectEmoji('❤️')">❤️</button>
                                 <button type="button" class="emoji-btn" onclick="selectEmoji('⭐')">⭐</button>
-                                <input type="text" class="form-input" id="new-project-icon" placeholder="or custom..." style="width: 100px; font-size: 1.1rem;">
+                                <input type="text" class="form-input" id="new-project-icon" placeholder="或自定义..." style="width: 100px; font-size: 1.1rem;">
                             </div>
                         </div>
                         <div style="display: flex; gap: 8px; align-items: center;">
-                            <label style="font-size: 0.8rem; color: var(--text-secondary);">Farbe:</label>
+                            <label style="font-size: 0.8rem; color: var(--text-secondary);">颜色：</label>
                             <input type="color" id="new-project-color" value="#6366f1" style="width: 50px; height: 32px; border: none; cursor: pointer; border-radius: 4px;">
-                            <button class="btn btn-secondary" id="btn-cancel-project" onclick="cancelEditProject()" style="display: none;">Cancel</button>
-                            <button class="btn btn-primary" id="btn-save-project" onclick="saveProject()" style="flex: 1;">+ Add Project</button>
+                            <button class="btn btn-secondary" id="btn-cancel-project" onclick="cancelEditProject()" style="display: none;">取消</button>
+                            <button class="btn btn-primary" id="btn-save-project" onclick="saveProject()" style="flex: 1;">+ 添加项目</button>
                         </div>
                     </div>
                 </div>
@@ -2660,15 +2660,15 @@
     <div class="modal-overlay" id="commit-modal" onclick="if(event.target===this)hideCommitModal()">
         <div class="modal">
             <div class="modal-header">
-                <h2 class="modal-title">💾 Save Changes to GitHub</h2>
+                <h2 class="modal-title">💾 保存更改到 GitHub</h2>
                 <button class="modal-close" onclick="hideCommitModal()">&times;</button>
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <label class="form-label">Commit Message</label>
-                    <input type="text" class="form-input" id="commit-message" placeholder="Update tasks" autocomplete="off">
+                    <label class="form-label">提交消息</label>
+                    <input type="text" class="form-input" id="commit-message" placeholder="更新任务" autocomplete="off">
                     <div class="form-hint">
-                        Describe what you changed (optional - will use default if empty)
+                        描述您更改的内容（可选 - 为空时将使用默认值）
                     </div>
                 </div>
                 <div id="changes-summary" style="margin-top: 1rem; padding: 1rem; background: var(--bg-card); border-radius: 6px; font-size: 0.875rem;">
@@ -2676,9 +2676,9 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button class="btn btn-secondary" onclick="hideCommitModal()">Cancel</button>
+                <button class="btn btn-secondary" onclick="hideCommitModal()">取消</button>
                 <button class="btn btn-primary" id="btn-commit" onclick="commitChanges()">
-                    <span id="commit-btn-text">Commit & Push</span>
+                    <span id="commit-btn-text">提交并推送</span>
                     <div class="spinner" id="commit-spinner" style="display: none;"></div>
                 </button>
             </div>
@@ -2689,80 +2689,80 @@
     <div class="modal-overlay" id="task-modal" onclick="if(event.target===this)hideTaskModal()">
         <div class="modal" style="max-width: 600px;">
             <div class="modal-header">
-                <h2 class="modal-title" id="task-modal-title">Edit Task</h2>
+                <h2 class="modal-title" id="task-modal-title">编辑任务</h2>
                 <button class="modal-close" onclick="hideTaskModal()">&times;</button>
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <label class="form-label">Title</label>
-                    <input type="text" class="form-input" id="task-title" placeholder="Task title">
+                    <label class="form-label">标题</label>
+                    <input type="text" class="form-input" id="task-title" placeholder="任务标题">
                 </div>
                 <div class="form-group">
-                    <label class="form-label">Description</label>
-                    <textarea class="form-input" id="task-description" rows="3" placeholder="Task description" style="resize: vertical;"></textarea>
+                    <label class="form-label">描述</label>
+                    <textarea class="form-input" id="task-description" rows="3" placeholder="任务描述" style="resize: vertical;"></textarea>
                 </div>
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
                     <div class="form-group">
-                        <label class="form-label">Status</label>
+                        <label class="form-label">状态</label>
                         <select class="form-input" id="task-status">
-                            <option value="permanent">Permanent</option>
-                            <option value="scheduled">Scheduled</option>
-                            <option value="backlog">Backlog</option>
-                            <option value="in_progress">In Progress</option>
-                            <option value="review">Review</option>
-                            <option value="done">Done</option>
+                            <option value="permanent">固定任务</option>
+                            <option value="scheduled">已计划</option>
+                            <option value="backlog">待办</option>
+                            <option value="in_progress">进行中</option>
+                            <option value="review">审核</option>
+                            <option value="done">已完成</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label class="form-label">Priority</label>
+                        <label class="form-label">优先级</label>
                         <select class="form-input" id="task-priority">
-                            <option value="low">Low</option>
-                            <option value="medium">Medium</option>
-                            <option value="high">High</option>
+                            <option value="low">低</option>
+                            <option value="medium">中</option>
+                            <option value="high">高</option>
                         </select>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="form-label">Project</label>
+                    <label class="form-label">项目</label>
                     <select class="form-input" id="task-project">
                         <!-- Populated dynamically from STATE.data.projects -->
                     </select>
                 </div>
                 <div class="form-group">
-                    <label class="form-label">Tags</label>
+                    <label class="form-label">标签</label>
                     <div id="tags-chips" class="tags-chips-container" style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px;"></div>
                     <div style="display: flex; gap: 8px;">
-                        <input type="text" class="form-input" id="new-tag-input" placeholder="Add tag..." style="flex: 1;" onkeydown="if(event.key==='Enter'){event.preventDefault();addTag();}">
-                        <button class="btn btn-secondary btn-small" onclick="addTag()">+ Add</button>
+                        <input type="text" class="form-input" id="new-tag-input" placeholder="添加标签..." style="flex: 1;" onkeydown="if(event.key==='Enter'){event.preventDefault();addTag();}">
+                        <button class="btn btn-secondary btn-small" onclick="addTag()">+ 添加</button>
                     </div>
                     <input type="hidden" id="task-tags">
                 </div>
 
                 <!-- Subtasks Section -->
                 <div class="form-group" id="subtasks-section">
-                    <label class="form-label">Subtasks</label>
+                    <label class="form-label">子任务</label>
                     <div class="subtasks-list" id="subtasks-list"></div>
                     <div class="subtask-add">
-                        <input type="text" class="form-input" id="new-subtask-input" placeholder="Add new subtask...">
-                        <button class="btn btn-secondary btn-small" onclick="addSubtask()">+ Add</button>
+                        <input type="text" class="form-input" id="new-subtask-input" placeholder="添加新子任务...">
+                        <button class="btn btn-secondary btn-small" onclick="addSubtask()">+ 添加</button>
                     </div>
                 </div>
 
                 <!-- Comments Section -->
                 <div class="form-group" id="comments-section">
-                    <label class="form-label">Comments</label>
+                    <label class="form-label">评论</label>
                     <div class="comments-list" id="comments-list"></div>
                     <div class="comment-add">
-                        <textarea class="form-input" id="new-comment-input" rows="2" placeholder="Add a comment..."></textarea>
-                        <button class="btn btn-secondary btn-small" onclick="addComment()">Post Comment</button>
+                        <textarea class="form-input" id="new-comment-input" rows="2" placeholder="添加评论..."></textarea>
+                        <button class="btn btn-secondary btn-small" onclick="addComment()">发表评论</button>
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
-                <button class="btn btn-danger" id="btn-delete-task" onclick="deleteTask()" style="margin-right: auto;">Delete</button>
-                <button class="btn btn-secondary" id="btn-task-to-cron" onclick="openTaskToCronWizard(currentEditingTaskId)" title="Convert to recurring cron job">⏰ As Cron</button>
-                <button class="btn btn-secondary" onclick="hideTaskModal()">Cancel</button>
-                <button class="btn btn-primary" onclick="saveTask()">Save Task</button>
+                <button class="btn btn-danger" id="btn-delete-task" onclick="deleteTask()" style="margin-right: auto;">删除</button>
+                <button class="btn btn-secondary" id="btn-task-to-cron" onclick="openTaskToCronWizard(currentEditingTaskId)" title="转换为循环 cron 任务">⏰ 转为 Cron</button>
+                <button class="btn btn-secondary" onclick="hideTaskModal()">取消</button>
+                <button class="btn btn-primary" onclick="saveTask()">保存任务</button>
             </div>
         </div>
     </div>
@@ -5464,7 +5464,7 @@
                     STATE.originalData = JSON.parse(JSON.stringify(newData));
                     STATE.fileSha = fileData.sha;
                     renderAll();
-                    showToast('success', '🔄 Dashboard updated');
+            showToast('success', `🔄 仪表板已更新`);
                 }
                 lastDataHash = newHash;
                 lastPollTime = Date.now();
@@ -6430,7 +6430,7 @@
             }
             
             if (!validateCronSchedule(schedule)) {
-                showToast('error', 'Invalid cron schedule');
+                showToast('error', '无效的 cron 计划');
                 return;
             }
             
