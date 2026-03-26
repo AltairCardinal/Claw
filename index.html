@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mission Control - MoltBot</title>
+    <title>任务控制台 - MoltBot</title>
     <style>
         :root {
             --bg-primary: #0d0d0d;
@@ -2138,7 +2138,7 @@
                         <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
                             <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
                         </svg>
-                        Connect with GitHub
+                        连接 GitHub
                     </button>
                     <div id="login-error" class="login-error"></div>
                     <div id="login-loading" class="login-loading">
@@ -2159,12 +2159,12 @@
         <div class="header-left">
             <div class="logo">
                 <span>🎯</span>
-                <span>Mission Control</span>
+                <span>任务控制台</span>
             </div>
             <nav class="nav-tabs">
-                <div class="nav-tab active" data-view="tasks" onclick="switchView('tasks')">Tasks</div>
-                <div class="nav-tab" data-view="docs" onclick="switchView('docs')">Docs</div>
-                <div class="nav-tab" data-view="people" onclick="switchView('people')">People</div>
+                <div class="nav-tab active" data-view="tasks" onclick="switchView('tasks')">任务</div>
+                <div class="nav-tab" data-view="docs" onclick="switchView('docs')">文档</div>
+                <div class="nav-tab" data-view="people" onclick="switchView('people')">人员</div>
             </nav>
             
             <!-- Search -->
@@ -2173,17 +2173,17 @@
                     <input type="text" 
                            id="search-input" 
                            class="search-input" 
-                           placeholder="Search tasks..." 
+                           placeholder="搜索任务..." 
                            oninput="handleSearch(this.value)"
                            onkeydown="if(event.key==='Escape'){clearSearch()}">
                     <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <circle cx="11" cy="11" r="8"></circle>
                         <path d="M21 21l-4.35-4.35"></path>
                     </svg>
-                    <button class="search-clear" onmousedown="event.preventDefault()" onclick="clearSearch()" title="Clear search">×</button>
+                    <button class="search-clear" onmousedown="event.preventDefault()" onclick="clearSearch()" title="清除搜索">×</button>
                 </div>
                 <span class="search-info" id="search-info"></span>
-                <label class="archive-search-toggle" title="Include archived tasks in search">
+                <label class="archive-search-toggle" title="搜索时包含已归档任务">
                     <input type="checkbox" id="search-include-archived" onchange="toggleArchiveSearch(this.checked)">
                     <span>📦 Archive</span>
                 </label>
@@ -2205,7 +2205,7 @@
             <div class="user-profile" id="user-profile" style="display: none;">
                 <img class="user-avatar" id="user-avatar" src="" alt="Avatar">
                 <span class="user-name" id="user-name"></span>
-                <button class="btn-icon" onclick="showSettingsModal()" title="Settings">⚙️</button>
+                <button class="btn-icon" onclick="showSettingsModal()" title="设置">⚙️</button>
                 <span class="user-logout" onclick="logout()">Logout</span>
             </div>
         </div>
@@ -2225,10 +2225,10 @@
 
     <!-- Unsaved Changes Banner -->
     <div class="unsaved-banner" id="unsaved-banner">
-        <span class="unsaved-text">⚠️ You have unsaved changes</span>
+        <span class="unsaved-text">⚠️ 您有未保存的更改</span>
         <div>
-            <button class="btn btn-secondary btn-small" onclick="discardChanges()">Discard</button>
-            <button class="btn btn-primary btn-small" onclick="showCommitModal()">Save & Commit</button>
+            <button class="btn btn-secondary btn-small" onclick="discardChanges()">放弃更改</button>
+            <button class="btn btn-primary btn-small" onclick="showCommitModal()">保存并提交</button>
         </div>
     </div>
 
@@ -2238,11 +2238,11 @@
     <div class="stats-bar">
         <div class="stat">
             <span class="stat-value" id="stat-week">0</span>
-            <span class="stat-label">This week</span>
+            <span class="stat-label">本周</span>
         </div>
         <div class="stat">
             <span class="stat-value" id="stat-progress">0</span>
-            <span class="stat-label">In progress</span>
+            <span class="stat-label">进行中</span>
         </div>
         <div class="stat">
             <span class="stat-value" id="stat-total">0</span>
@@ -2250,12 +2250,12 @@
         </div>
         <div class="stat">
             <span class="stat-value stat-highlight" id="stat-completion">0%</span>
-            <span class="stat-label">Completion</span>
+            <span class="stat-label">完成率</span>
         </div>
     </div>
 
     <div class="filters" id="filters">
-        <button class="filter-btn active" data-filter="all">All projects</button>
+        <button class="filter-btn active" data-filter="all">所有项目</button>
     </div>
 
     <main class="main">
@@ -2263,7 +2263,7 @@
             <div class="column column-recurring">
                 <div class="column-header">
                     <div class="column-dot recurring"></div>
-                    <span class="column-title">Recurring</span>
+                    <span class="column-title">循环</span>
                     <span class="column-count" id="count-recurring">0</span>
                 </div>
                 <div class="column-tasks" id="tasks-recurring" ondragover="handleCronDragOver(event)" ondragleave="handleCronDragLeave(event)" ondrop="handleCronDrop(event)"></div>
@@ -2272,9 +2272,9 @@
             <div class="column column-scheduled">
                 <div class="column-header">
                     <div class="column-dot scheduled"></div>
-                    <span class="column-title">📅 Scheduled</span>
+                    <span class="column-title">📅 已安排</span>
                     <span class="column-count" id="count-scheduled">0</span>
-                    <span class="column-add" onclick="openScheduledTaskModal()" title="Schedule a task">+</span>
+                    <span class="column-add" onclick="openScheduledTaskModal()" title="安排任务">+</span>
                 </div>
                 <div class="column-tasks" id="tasks-scheduled" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event, 'scheduled')"></div>
             </div>
@@ -2282,9 +2282,9 @@
             <div class="column column-templates">
                 <div class="column-header">
                     <div class="column-dot templates"></div>
-                    <span class="column-title">📑 Templates</span>
+                    <span class="column-title">📑 模板</span>
                     <span class="column-count" id="count-templates">0</span>
-                    <span class="column-add" onclick="openNewTemplate()" title="Add new template">+</span>
+                    <span class="column-add" onclick="openNewTemplate()" title="添加新模板">+</span>
                 </div>
                 <div class="column-tasks" id="tasks-templates"></div>
             </div>
@@ -2292,9 +2292,9 @@
             <div class="column">
                 <div class="column-header">
                     <div class="column-dot permanent"></div>
-                    <span class="column-title">Permanent</span>
+                    <span class="column-title">固定任务</span>
                     <span class="column-count" id="count-permanent">0</span>
-                    <span class="column-add" onclick="openNewTask('permanent')" title="Add new task">+</span>
+                    <span class="column-add" onclick="openNewTask('permanent')" title="添加新任务">+</span>
                 </div>
                 <div class="column-tasks" id="tasks-permanent" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event, 'permanent')"></div>
             </div>
@@ -2302,9 +2302,9 @@
             <div class="column">
                 <div class="column-header">
                     <div class="column-dot backlog"></div>
-                    <span class="column-title">Backlog</span>
+                    <span class="column-title">待办</span>
                     <span class="column-count" id="count-backlog">0</span>
-                    <span class="column-add" onclick="openNewTask('backlog')" title="Add new task">+</span>
+                    <span class="column-add" onclick="openNewTask('backlog')" title="添加新任务">+</span>
                 </div>
                 <div class="column-tasks" id="tasks-backlog" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event, 'backlog')"></div>
             </div>
@@ -2312,9 +2312,9 @@
             <div class="column">
                 <div class="column-header">
                     <div class="column-dot in-progress"></div>
-                    <span class="column-title">In Progress</span>
+                    <span class="column-title">进行中</span>
                     <span class="column-count" id="count-in_progress">0</span>
-                    <span class="column-add" onclick="openNewTask('in_progress')" title="Add new task">+</span>
+                    <span class="column-add" onclick="openNewTask('in_progress')" title="添加新任务">+</span>
                 </div>
                 <div class="column-tasks" id="tasks-in_progress" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event, 'in_progress')"></div>
             </div>
@@ -2322,9 +2322,9 @@
             <div class="column">
                 <div class="column-header">
                     <div class="column-dot review"></div>
-                    <span class="column-title">Review</span>
+                    <span class="column-title">审核</span>
                     <span class="column-count" id="count-review">0</span>
-                    <span class="column-add" onclick="openNewTask('review')" title="Add new task">+</span>
+                    <span class="column-add" onclick="openNewTask('review')" title="添加新任务">+</span>
                 </div>
                 <div class="column-tasks" id="tasks-review" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event, 'review')"></div>
             </div>
@@ -2332,10 +2332,10 @@
             <div class="column">
                 <div class="column-header">
                     <div class="column-dot done"></div>
-                    <span class="column-title">Done</span>
+                    <span class="column-title">已完成</span>
                     <span class="column-count" id="count-done">0</span>
-                    <button class="archive-all-btn" onclick="showArchiveView()" title="View archived tasks" style="background: transparent;">📂 View</button>
-                    <button class="archive-all-btn" onclick="archiveAllDone()" title="Archive all done tasks">📦 Archive All</button>
+                    <button class="archive-all-btn" onclick="showArchiveView()" title="查看已归档任务" style="background: transparent;">📂 查看</button>
+                    <button class="archive-all-btn" onclick="archiveAllDone()" title="归档所有已完成任务">📦 全部归档</button>
                 </div>
                 <div class="column-tasks" id="tasks-done" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event, 'done')"></div>
             </div>
@@ -2344,13 +2344,13 @@
         <aside class="activity" id="activity-sidebar">
             <div class="activity-header">
                 <span>ACTIVITY</span>
-                <button class="activity-toggle" onclick="toggleActivity()" title="Hide Activity">
+                <button class="activity-toggle" onclick="toggleActivity()" title="隐藏活动记录">
                     <span id="activity-toggle-icon">✕</span>
                 </button>
             </div>
             <div class="activity-list" id="activity-list"></div>
         </aside>
-        <button class="activity-reopen" id="activity-reopen" onclick="toggleActivity()" title="Show Activity">
+        <button class="activity-reopen" id="activity-reopen" onclick="toggleActivity()" title="显示活动记录">
             ACTIVITY
         </button>
     </main>
@@ -2360,19 +2360,19 @@
     <!-- DOCS VIEW -->
     <div id="view-docs" class="view" style="display: none;">
         <div class="docs-container" style="max-width: 900px; margin: 0 auto; padding: 2rem;">
-            <h1 style="margin-bottom: 1.5rem;">📚 Mission Control Documentation</h1>
+            <h1 style="margin-bottom: 1.5rem;">📚 任务控制台文档</h1>
 
             <div class="docs-section" style="margin-bottom: 2rem; background: var(--bg-secondary); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--accent);">
-                <h2 style="color: var(--accent); margin-bottom: 0.5rem;">📌 Demo Mode</h2>
+                <h2 style="color: var(--accent); margin-bottom: 0.5rem;">📌 演示模式</h2>
                 <p style="color: var(--text-secondary); line-height: 1.6;">
                     You're currently viewing <strong>sample data</strong>. To manage your own tasks, click <strong>"Connect GitHub"</strong> in the top right corner to link your repository.
                 </p>
             </div>
 
             <div class="docs-section" style="margin-bottom: 2rem;">
-                <h2 style="color: var(--accent); margin-bottom: 1rem;">🚀 Getting Started</h2>
+                <h2 style="color: var(--accent); margin-bottom: 1rem;">🚀 入门指南</h2>
 
-                <h3 style="margin: 1rem 0 0.5rem;">Installation</h3>
+                <h3 style="margin: 1rem 0 0.5rem;">安装</h3>
                 <p style="color: var(--text-secondary); line-height: 1.6;">
                     Add Mission Control to your existing MoltBot workspace:
                 </p>
@@ -2383,7 +2383,7 @@
                     <li>Visit <code>https://[username].github.io/mission-control/</code></li>
                 </ol>
 
-                <h3 style="margin: 1.5rem 0 0.5rem;">Connect to GitHub</h3>
+                <h3 style="margin: 1.5rem 0 0.5rem;">连接 GitHub</h3>
                 <p style="color: var(--text-secondary); line-height: 1.6;">
                     Click <strong>"Connect GitHub"</strong> in the top right corner. You'll need a GitHub Personal Access Token with <code>repo</code> permissions.
                 </p>
@@ -2394,7 +2394,7 @@
                     <li>Copy the token and paste it in Mission Control</li>
                 </ol>
 
-                <h3 style="margin: 1.5rem 0 0.5rem;">Understanding the Board</h3>
+                <h3 style="margin: 1.5rem 0 0.5rem;">理解看板</h3>
                 <p style="color: var(--text-secondary); line-height: 1.6;">
                     Mission Control uses a Kanban-style board with 5 columns:
                 </p>
@@ -2408,9 +2408,9 @@
             </div>
 
             <div class="docs-section" style="margin-bottom: 2rem;">
-                <h2 style="color: var(--accent); margin-bottom: 1rem;">✨ Features</h2>
+                <h2 style="color: var(--accent); margin-bottom: 1rem;">✨ 功能特性</h2>
 
-                <h3 style="margin: 1rem 0 0.5rem;">Auto-Save</h3>
+                <h3 style="margin: 1rem 0 0.5rem;">自动保存</h3>
                 <p style="color: var(--text-secondary); line-height: 1.6;">
                     All changes are <strong>automatically saved</strong> to GitHub. No manual "Save" button needed!
                 </p>
@@ -2421,29 +2421,29 @@
                     <li>Add comments → instant save</li>
                 </ul>
 
-                <h3 style="margin: 1.5rem 0 0.5rem;">Drag & Drop</h3>
+                <h3 style="margin: 1.5rem 0 0.5rem;">拖拽</h3>
                 <p style="color: var(--text-secondary); line-height: 1.6;">
                     Click and drag any task card to move it between columns. The status updates automatically.
                 </p>
 
-                <h3 style="margin: 1.5rem 0 0.5rem;">Subtasks</h3>
+                <h3 style="margin: 1.5rem 0 0.5rem;">子任务</h3>
                 <p style="color: var(--text-secondary); line-height: 1.6;">
                     Break down tasks into smaller steps. Click on a subtask to edit it inline.
                 </p>
 
-                <h3 style="margin: 1.5rem 0 0.5rem;">Comments</h3>
+                <h3 style="margin: 1.5rem 0 0.5rem;">评论</h3>
                 <p style="color: var(--text-secondary); line-height: 1.6;">
                     Add comments to tasks for context or feedback. Comments on <strong>Review</strong> tasks trigger notifications to MoltBot.
                 </p>
 
-                <h3 style="margin: 1.5rem 0 0.5rem;">Projects & Tags</h3>
+                <h3 style="margin: 1.5rem 0 0.5rem;">项目和标签</h3>
                 <p style="color: var(--text-secondary); line-height: 1.6;">
                     Organize tasks by project. Use the ⚙️ Settings to add new projects. Filter tasks using the project buttons.
                 </p>
             </div>
 
             <div class="docs-section" style="margin-bottom: 2rem;">
-                <h2 style="color: var(--accent); margin-bottom: 1rem;">🤖 MoltBot Integration</h2>
+                <h2 style="color: var(--accent); margin-bottom: 1rem;">🤖 MoltBot 集成</h2>
                 <p style="color: var(--text-secondary); line-height: 1.6;">
                     Mission Control is connected to MoltBot via webhooks. When you make changes:
                 </p>
@@ -2459,7 +2459,7 @@
             </div>
 
             <div class="docs-section" style="margin-bottom: 2rem;">
-                <h2 style="color: var(--accent); margin-bottom: 1rem;">⌨️ Keyboard Shortcuts</h2>
+                <h2 style="color: var(--accent); margin-bottom: 1rem;">⌨️ 快捷键</h2>
                 <table style="width: 100%; border-collapse: collapse;">
                     <tr style="border-bottom: 1px solid var(--border-color);">
                         <td style="padding: 0.5rem; color: var(--text-secondary);"><code>Cmd/Ctrl + Shift + R</code></td>
@@ -2477,7 +2477,7 @@
             </div>
 
             <div class="docs-section">
-                <h2 style="color: var(--accent); margin-bottom: 1rem;">❓ FAQ</h2>
+                <h2 style="color: var(--accent); margin-bottom: 1rem;">❓ 常见问题</h2>
 
                 <details style="margin-bottom: 1rem;">
                     <summary style="cursor: pointer; font-weight: 500;">Why don't I see my changes?</summary>
@@ -2525,7 +2525,7 @@
     <div class="modal-overlay" id="auth-modal" onclick="if(event.target===this)hideAuthModal()">
         <div class="modal">
             <div class="modal-header">
-                <h2 class="modal-title">🔐 Connect to GitHub</h2>
+                <h2 class="modal-title">🔐 连接 GitHub</h2>
                 <button class="modal-close" onclick="hideAuthModal()">&times;</button>
             </div>
             <div class="modal-body">
@@ -2562,7 +2562,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="form-label">GitHub Personal Access Token</label>
+                    <label class="form-label">GitHub 个人访问令牌</label>
                     <input type="password" class="form-input" id="token-input" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx" autocomplete="off">
                     <div class="form-hint">
                         🔒 Your token is stored locally and never sent anywhere except GitHub.
@@ -2582,8 +2582,8 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button class="btn btn-secondary" onclick="hideAuthModal()">Cancel</button>
-                <button class="btn btn-primary" id="btn-save-token" onclick="validateAndSaveToken()" disabled>Connect</button>
+                <button class="btn btn-secondary" onclick="hideAuthModal()">取消</button>
+                <button class="btn btn-primary" id="btn-save-token" onclick="validateAndSaveToken()" disabled>连接</button>
             </div>
         </div>
     </div>
@@ -3176,7 +3176,7 @@
             }
 
             STATE.isLoading = true;
-            showToast('success', '📥 Loading tasks from GitHub...');
+            showToast('success', '📥 正在从 GitHub 加载任务...');
 
             try {
                 const response = await fetch(
@@ -3204,11 +3204,11 @@
                 STATE.fileSha = fileData.sha;  // Needed for updates
 
                 console.log('Loaded tasks from GitHub:', data.tasks.length, 'tasks');
-                showToast('success', `✓ Loaded ${data.tasks.length} tasks from GitHub`);
+                showToast('success', `✓ 已从 GitHub 加载 ${data.tasks.length} 个任务`);
 
             } catch (error) {
                 console.error('Error loading from GitHub:', error);
-                showToast('error', 'Could not load from GitHub, using cached data');
+                showToast('error', '无法从 GitHub 加载，使用缓存数据');
                 STATE.data = JSON.parse(JSON.stringify(FALLBACK_DATA));
             }
 
@@ -3218,7 +3218,7 @@
 
         async function saveTasksToGitHub(commitMessage) {
             if (!STATE.token || !STATE.data) {
-                showToast('error', 'Not logged in');
+                showToast('error', '未登录');
                 return false;
             }
 
@@ -3254,12 +3254,12 @@
                 STATE.hasUnsavedChanges = false;
                 document.getElementById('unsaved-banner').classList.remove('visible');
 
-                showToast('success', '✓ Saved to GitHub!');
+                showToast('success', '✓ 已保存到 GitHub!');
                 return true;
 
             } catch (error) {
                 console.error('Error saving to GitHub:', error);
-                showToast('error', `Failed to save: ${error.message}`);
+                showToast('error', `保存失败: ${error.message}`);
                 return false;
             }
         }
@@ -3339,7 +3339,7 @@
         // Save crons to GitHub (for fallback when Gateway unavailable)
         async function saveCronsToGitHub(commitMessage) {
             if (!STATE.token) {
-                showToast('error', 'Not logged in - cannot save crons');
+                showToast('error', '未登录 - 无法保存 cron 任务');
                 return false;
             }
             
@@ -3375,7 +3375,7 @@
                 
             } catch (error) {
                 console.error('Error saving crons to GitHub:', error);
-                showToast('error', `Failed to save crons: ${error.message}`);
+                showToast('error', `保存 cron 任务失败: ${error.message}`);
                 return false;
             }
         }
@@ -3550,7 +3550,7 @@
             document.getElementById('unsaved-banner').classList.remove('visible');
             updateAuthUI();
             renderAll();
-            showToast('success', 'Logged out');
+            showToast('success', '已退出登录');
         }
 
         function updateAuthUI() {
@@ -4218,13 +4218,13 @@
         // === AUTO-SAVE FUNKTION ===
         async function autoSave(action) {
             if (!STATE.token || !STATE.user) {
-                showToast('warning', 'Not logged in - changes not saved');
+                showToast('warning', '未登录 - 更改未保存');
                 markAsChanged();
                 return;
             }
 
             const commitMessage = `${action} (via Mission Control)`;
-            showToast('info', '💾 Saving...');
+            showToast('info', '💾 保存中...');
 
             const success = await saveTasksToGitHub(commitMessage);
             if (!success) {
@@ -4324,7 +4324,7 @@
         function archiveAllDone() {
             const doneTasks = STATE.data.tasks.filter(t => t.status === 'done' && !t.archived);
             if (doneTasks.length === 0) {
-                showToast('No tasks to archive', 'info');
+                showToast('没有要归档的任务', 'info');
                 return;
             }
             
@@ -4337,7 +4337,7 @@
             addActivity(`📦 Archived ${count} task${count > 1 ? 's' : ''} from Done`, 'archive');
             renderTasks();
             autoSave(`Archive ${count} task${count > 1 ? 's' : ''}`);
-            showToast(`Archived ${count} task${count > 1 ? 's' : ''}`, 'success');
+            showToast(`已归档 ${count} 个任务`, 'success');
             
             // Check if we need to move old tasks to archive files
             checkAndMoveOldArchivedTasks();
@@ -4402,7 +4402,7 @@
         async function loadArchivedTasks() {
             if (archivedTasksLoaded) return;
             
-            showToast('info', 'Loading archived tasks...');
+            showToast('info', '正在加载已归档任务...');
             
             try {
                 // Load archive index from GitHub
@@ -4416,7 +4416,7 @@
                     const data = await response.json();
                     archiveIndex = JSON.parse(atob(data.content));
                     archivedTasksLoaded = true;
-                    showToast('success', `Loaded archive index`);
+                    showToast('success', `已加载归档索引`);
                 }
             } catch (e) {
                 console.log('No archive index found or error:', e);
@@ -4427,7 +4427,7 @@
             const archivedTasks = STATE.data.tasks.filter(t => t.archived);
             
             if (archivedTasks.length === 0) {
-                showToast('info', 'No archived tasks to export');
+                showToast('info', '没有已归档任务可导出');
                 return;
             }
             
@@ -4457,7 +4457,7 @@
             link.download = `archived-tasks-${new Date().toISOString().slice(0, 10)}.csv`;
             link.click();
             
-            showToast('success', `Exported ${archivedTasks.length} archived tasks to CSV`);
+            showToast('success', `已导出 ${archivedTasks.length} 个归档任务到 CSV`);
         }
         
         function showArchiveView() {
@@ -4665,7 +4665,7 @@
 
         function openTaskDetail(taskId) {
             if (!STATE.user) {
-                showToast('error', 'Login to edit tasks');
+                showToast('error', '请登录以编辑任务');
                 return;
             }
 
@@ -4673,7 +4673,7 @@
             const task = data.tasks.find(t => t.id === taskId);
 
             if (!task) {
-                showToast('error', 'Task not found');
+                showToast('error', '任务未找到');
                 return;
             }
 
@@ -4681,7 +4681,7 @@
             isEditingTemplate = task.isTemplate === true;
 
             // Populate modal
-            document.getElementById('task-modal-title').textContent = task.isTemplate ? '📑 Edit Template' : 'Edit Task';
+            document.getElementById('task-modal-title').textContent = task.isTemplate ? '📑 编辑模板' : '编辑任务';
             document.getElementById('task-title').value = task.title;
             document.getElementById('task-description').value = task.description;
             document.getElementById('task-status').value = task.isTemplate ? (task.baseStatus || 'backlog') : task.status;
@@ -4855,7 +4855,7 @@
         }
 
         function deleteComment(taskId, commentIdx) {
-            if (!confirm('Delete this comment?')) return;
+            if (!confirm('删除这条评论?')) return;
 
             const task = STATE.data.tasks.find(t => t.id === taskId);
             if (!task || !task.comments) return;
@@ -4962,14 +4962,14 @@
 
         function openNewTask(status = 'backlog') {
             if (!STATE.user) {
-                showToast('error', 'Login to add tasks');
+                showToast('error', '请登录以添加任务');
                 return;
             }
 
             currentEditingTaskId = null;
 
             // Reset modal
-            document.getElementById('task-modal-title').textContent = 'New Task';
+            document.getElementById('task-modal-title').textContent = '新任务';
             document.getElementById('task-title').value = '';
             document.getElementById('task-description').value = '';
             document.getElementById('task-status').value = status;
@@ -5003,7 +5003,7 @@
             const tags = currentTaskTags.length > 0 ? [...currentTaskTags] : [project];
 
             if (!title) {
-                showToast('error', 'Title is required');
+                showToast('error', '标题为必填项');
                 return;
             }
 
@@ -5067,7 +5067,7 @@
         function deleteTask() {
             if (!currentEditingTaskId) return;
 
-            if (!confirm('Are you sure you want to delete this task?')) return;
+            if (!confirm('确定要删除这个任务吗?')) return;
 
             const task = STATE.data.tasks.find(t => t.id === currentEditingTaskId);
             const taskTitle = task?.title || 'Task';
@@ -5093,13 +5093,13 @@
             STATE.hasUnsavedChanges = false;
             document.getElementById('unsaved-banner').classList.remove('visible');
             renderTasks();
-            showToast('success', 'Changes discarded');
+            showToast('success', '更改已放弃');
         }
 
         // === COMMIT MODAL ===
         function showCommitModal() {
             if (!STATE.hasUnsavedChanges) {
-                showToast('error', 'No changes to save');
+                showToast('error', '没有更改需要保存');
                 return;
             }
 
@@ -5154,7 +5154,7 @@
                 setGatewayUrl(null);
                 status.textContent = '⚠️ Gateway disconnected';
                 status.style.color = 'var(--text-secondary)';
-                showToast('info', 'Gateway URL cleared');
+                showToast('info', '网关 URL 已清除');
                 return;
             }
             
@@ -5167,12 +5167,12 @@
                     setGatewayUrl(url);
                     status.textContent = '✅ Connected';
                     status.style.color = 'var(--accent-green)';
-                    showToast('success', 'Gateway connected');
+                    showToast('success', '网关已连接');
                 } else {
                     setGatewayUrl(url);
                     status.textContent = '⚠️ Saved (could not verify)';
                     status.style.color = 'var(--accent-yellow)';
-                    showToast('info', 'Gateway URL saved');
+                    showToast('info', '网关 URL 已保存');
                 }
             } catch (e) {
                 setGatewayUrl(url);
@@ -5532,7 +5532,7 @@
             currentEditingTaskId = null;
             isEditingTemplate = true;
             
-            document.getElementById('task-modal-title').textContent = '📑 New Template';
+            document.getElementById('task-modal-title').textContent = '📑 新模板';
             document.getElementById('task-title').value = '';
             document.getElementById('task-description').value = '';
             document.getElementById('task-status').value = 'backlog';
@@ -5568,7 +5568,7 @@
             currentEditingTaskId = templateId;
             isEditingTemplate = true;
             
-            document.getElementById('task-modal-title').textContent = '📑 Edit Template';
+            document.getElementById('task-modal-title').textContent = '📑 编辑模板';
             document.getElementById('task-title').value = template.title;
             document.getElementById('task-description').value = template.description;
             document.getElementById('task-status').value = template.baseStatus || 'backlog';
@@ -5852,11 +5852,11 @@
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
-                            <label class="form-label">Title</label>
+                            <label class="form-label">标题</label>
                             <input type="text" class="form-input" id="scheduled-title" placeholder="Task title">
                         </div>
                         <div class="form-group">
-                            <label class="form-label">Description</label>
+                            <label class="form-label">描述</label>
                             <textarea class="form-input" id="scheduled-description" rows="2" placeholder="Task description"></textarea>
                         </div>
                         <div class="form-group">
@@ -5894,7 +5894,7 @@
             const priority = document.getElementById('scheduled-priority').value;
             
             if (!title) {
-                showToast('error', 'Title is required');
+                showToast('error', '标题为必填项');
                 return;
             }
             
