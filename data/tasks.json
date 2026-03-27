@@ -2,26 +2,26 @@
   "tasks": [
     {
       "id": "guide_onboarding",
-      "title": "🚀 Onboarding Guide — Set Up Mission Control",
-      "description": "Welcome to Mission Control! Follow these steps to complete your setup. Work through each subtask in order.\n\n**Tip:** Click on a subtask to see detailed instructions. Check it off when done.",
+      "title": "🚀 入门指南 — 设置任务控制台",
+      "description": "欢迎使用任务控制台!按照以下步骤完成您的设置。依次完成每个子任务。\n\n**提示:** 点击子任务查看详细说明。完成后勾选。",
       "status": "permanent",
       "project": "guides",
       "tags": ["guide", "setup"],
       "subtasks": [
-        { "id": "sub_001", "title": "1. Enable GitHub Pages: Settings → Pages → Branch: main → Save", "done": false },
-        { "id": "sub_002", "title": "2. Create GitHub Token: github.com/settings/tokens → Generate (classic) → Scope: repo", "done": false },
-        { "id": "sub_003", "title": "3. Connect Dashboard: Open your GitHub Pages URL → Click 'Connect GitHub' → Paste token", "done": false },
-        { "id": "sub_004", "title": "4. Install Tailscale: brew install tailscale && tailscale up", "done": false },
-        { "id": "sub_005", "title": "5. Enable Funnel: tailscale funnel 18789 → Copy your URL", "done": false },
-        { "id": "sub_006", "title": "6. Generate Webhook Token: openssl rand -hex 32 → Save it", "done": false },
-        { "id": "sub_007", "title": "7. Add GitHub Webhook: Settings → Webhooks → Add → URL: https://YOUR-TAILSCALE-URL/hooks/github?token=YOUR-TOKEN", "done": false },
-        { "id": "sub_008", "title": "8. Test: Create a task, move to In Progress, verify MoltBot receives notification", "done": false }
+        { "id": "sub_001", "title": "1. 启用 GitHub Pages: 设置 → Pages → 分支: main → 保存", "done": false },
+        { "id": "sub_002", "title": "2. 创建 GitHub Token: github.com/settings/tokens → 生成 (classic) → 权限: repo", "done": false },
+        { "id": "sub_003", "title": "3. 连接控制台: 打开 GitHub Pages URL → 点击「连接 GitHub」→ 粘贴 token", "done": false },
+        { "id": "sub_004", "title": "4. 安装 Tailscale: brew install tailscale && tailscale up", "done": false },
+        { "id": "sub_005", "title": "5. 启用 Funnel: tailscale funnel 18789 → 复制您的 URL", "done": false },
+        { "id": "sub_006", "title": "6. 生成 Webhook Token: openssl rand -hex 32 → 保存它", "done": false },
+        { "id": "sub_007", "title": "7. 添加 GitHub Webhook: 设置 → Webhooks → 添加 → URL: https://YOUR-TAILSCALE-URL/hooks/github?token=YOUR-TOKEN", "done": false },
+        { "id": "sub_008", "title": "8. 测试: 创建任务,移至进行中,验证 MoltBot 收到通知", "done": false }
       ],
       "priority": "high",
       "comments": [
         {
           "author": "Mission Control",
-          "text": "Once all steps are complete, you can archive this guide or keep it as reference. Your setup is done when MoltBot responds to task changes!",
+          "text": "完成所有步骤后,您可以归档本指南或保留作为参考。当 MoltBot 对任务变更做出响应时,您的设置就完成了!",
           "timestamp": "2026-01-01T00:00:00Z"
         }
       ],
@@ -73,7 +73,7 @@
       "comments": [
         {
           "author": "Mission Control",
-          "text": "This guide stays in Permanent so you can always reference it. The subtasks aren't meant to be 'completed' — they're documentation!",
+          "text": "本指南永久保留,方便您随时查阅。子任务无需「完成」 — 它们是文档说明!",
           "timestamp": "2026-01-01T00:00:00Z"
         }
       ],
@@ -81,15 +81,15 @@
     },
     {
       "id": "task_example",
-      "title": "Example Task — Delete me when ready!",
-      "description": "This is an example of what a real task looks like. Feel free to edit or delete it.\n\n**Good task descriptions include:**\n- What needs to be done\n- Why it matters\n- Any constraints or requirements\n- Links to relevant resources",
+      "title": "示例任务 — 准备好后删除我!",
+      "description": "这是一个真实任务的示例。您可以随意编辑或删除它。\n\n**好的任务描述应包括:**\n- 需要做什么\n- 为什么重要\n- 任何约束或要求\n- 相关资源链接",
       "status": "backlog",
       "project": "default",
       "tags": ["example"],
       "subtasks": [
-        { "id": "sub_001", "title": "First step of the task", "done": false },
-        { "id": "sub_002", "title": "Second step", "done": false },
-        { "id": "sub_003", "title": "Final step", "done": false }
+        { "id": "sub_001", "title": "任务的第一步", "done": false },
+        { "id": "sub_002", "title": "第二步", "done": false },
+        { "id": "sub_003", "title": "最后一步", "done": false }
       ],
       "priority": "low",
       "comments": [],
@@ -97,12 +97,12 @@
     }
   ],
   "projects": [
-    { "id": "guides", "name": "Guides", "color": "#10b981", "icon": "📚" },
-    { "id": "default", "name": "My Project", "color": "#3b82f6", "icon": "📁" }
+    { "id": "guides", "name": "指南", "color": "#10b981", "icon": "📚" },
+    { "id": "default", "name": "我的项目", "color": "#3b82f6", "icon": "📁" }
   ],
   "activities": [
-    { "type": "created", "actor": "Mission Control", "task": "Onboarding Guide", "time": "just now" },
-    { "type": "created", "actor": "Mission Control", "task": "User Guide", "time": "just now" }
+    { "type": "created", "actor": "Mission Control", "task": "入门指南", "time": "刚刚" },
+    { "type": "created", "actor": "Mission Control", "task": "用户指南", "time": "刚刚" }
   ],
   "lastUpdated": "2026-01-01T00:00:00Z"
 }

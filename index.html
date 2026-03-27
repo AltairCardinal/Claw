@@ -2110,24 +2110,24 @@
                     <div class="login-step">
                         <span class="login-step-num">1</span>
                         <div>
-                            <strong>Create a Personal Access Token</strong>
+                            <strong>创建个人访问令牌</strong>
                             <a href="https://github.com/settings/tokens/new?scopes=repo&description=Mission%20Control%20Dashboard" target="_blank" class="login-link">
-                                Create token on GitHub →
+                                在 GitHub 上创建令牌 →
                             </a>
                         </div>
                     </div>
                     <div class="login-step">
                         <span class="login-step-num">2</span>
                         <div>
-                            <strong>Select "repo" scope</strong>
-                            <span class="login-hint">Allows read/write access to repositories</span>
+                            <strong>选择 "repo" 权限</strong>
+                            <span class="login-hint">允许对仓库进行读写访问</span>
                         </div>
                     </div>
                     <div class="login-step">
                         <span class="login-step-num">3</span>
                         <div>
-                            <strong>Paste your token below</strong>
-                            <span class="login-hint">Starts with "ghp_"</span>
+                            <strong>在下方粘贴您的令牌</strong>
+                            <span class="login-hint">以 "ghp_" 开头</span>
                         </div>
                     </div>
                 </div>
@@ -2143,11 +2143,11 @@
                     <div id="login-error" class="login-error"></div>
                     <div id="login-loading" class="login-loading">
                         <div class="spinner"></div>
-                        <span>Validating...</span>
+                        <span>正在验证...</span>
                     </div>
                 </div>
 
-                <p class="login-security">🔒 Your token is stored locally and never sent anywhere except GitHub.</p>
+                <p class="login-security">🔒 您的令牌仅存储在本地，除 GitHub 外不会发送到任何地方。</p>
             </div>
         </div>
     </div>
@@ -2198,7 +2198,7 @@
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
                     <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
                 </svg>
-                Connect GitHub
+                连接 GitHub
             </button>
 
             <!-- Logged In (hidden by default) -->
@@ -2215,7 +2215,7 @@
     <div class="version-banner" id="version-banner">
         <div class="version-banner-text">
             <span class="update-icon">🔄</span>
-            Neue Version verfügbar!
+            新版本可用！
         </div>
         <div>
             <button class="btn-refresh" onclick="reloadPage()">↻ Aktualisieren</button>
@@ -2343,7 +2343,7 @@
 
         <aside class="activity" id="activity-sidebar">
             <div class="activity-header">
-                <span>ACTIVITY</span>
+                <span>动态</span>
                 <button class="activity-toggle" onclick="toggleActivity()" title="隐藏活动记录">
                     <span id="activity-toggle-icon">✕</span>
                 </button>
@@ -2351,7 +2351,7 @@
             <div class="activity-list" id="activity-list"></div>
         </aside>
         <button class="activity-reopen" id="activity-reopen" onclick="toggleActivity()" title="显示活动记录">
-            ACTIVITY
+            动态
         </button>
     </main>
 
@@ -2365,7 +2365,7 @@
             <div class="docs-section" style="margin-bottom: 2rem; background: var(--bg-secondary); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--accent);">
                 <h2 style="color: var(--accent); margin-bottom: 0.5rem;">📌 演示模式</h2>
                 <p style="color: var(--text-secondary); line-height: 1.6;">
-                    You're currently viewing <strong>sample data</strong>. To manage your own tasks, click <strong>"Connect GitHub"</strong> in the top right corner to link your repository.
+                    您当前正在查看<strong>示例数据</strong>。如需管理您自己的任务，请点击右上角的<strong>"连接 GitHub"</strong>以关联您的仓库。
                 </p>
             </div>
 
@@ -2374,18 +2374,18 @@
 
                 <h3 style="margin: 1rem 0 0.5rem;">安装</h3>
                 <p style="color: var(--text-secondary); line-height: 1.6;">
-                    Add Mission Control to your existing MoltBot workspace:
+                    将任务控制台添加到您现有的 MoltBot 工作区：
                 </p>
                 <ol style="color: var(--text-secondary); line-height: 1.8; margin-left: 1.5rem;">
-                    <li><strong>Fork</strong> this repository to your GitHub account</li>
-                    <li><strong>Copy dashboard files</strong> to your workspace: <code>index.html</code>, <code>data/</code>, <code>canvas/</code>, <code>scripts/</code>, <code>.github/</code></li>
-                    <li>Enable <strong>GitHub Pages</strong> in your repo settings (Settings → Pages → Branch: main)</li>
-                    <li>Visit <code>https://[username].github.io/mission-control/</code></li>
+                    <li>将本仓库 <strong>Fork</strong> 到您的 GitHub 账号</li>
+                    <li>将<strong>仪表板文件</strong>复制到您的工作区：<code>index.html</code>、<code>data/</code>、<code>canvas/</code>、<code>scripts/</code>、<code>.github/</code></li>
+                    <li>在仓库设置中启用 <strong>GitHub Pages</strong>（设置 → Pages → 分支：main）</li>
+                    <li>访问 <code>https://[用户名].github.io/mission-control/</code></li>
                 </ol>
 
                 <h3 style="margin: 1.5rem 0 0.5rem;">连接 GitHub</h3>
                 <p style="color: var(--text-secondary); line-height: 1.6;">
-                    Click <strong>"Connect GitHub"</strong> in the top right corner. You'll need a GitHub Personal Access Token with <code>repo</code> permissions.
+                    点击右上角的<strong>"连接 GitHub"</strong>，您需要一个具有 <code>repo</code> 权限的 GitHub 个人访问令牌。
                 </p>
                 <ol style="color: var(--text-secondary); line-height: 1.8; margin-left: 1.5rem;">
                     <li>Go to <a href="https://github.com/settings/tokens" target="_blank" style="color: var(--accent);">GitHub Settings → Tokens</a></li>
@@ -2396,7 +2396,7 @@
 
                 <h3 style="margin: 1.5rem 0 0.5rem;">理解看板</h3>
                 <p style="color: var(--text-secondary); line-height: 1.6;">
-                    Mission Control uses a Kanban-style board with 5 columns:
+                    任务控制台使用看板式布局，包含 5 列：
                 </p>
                 <ul style="color: var(--text-secondary); line-height: 1.8; margin-left: 1.5rem;">
                     <li><strong>🔄 固定任务</strong> - 重复性任务（每日、每周检查）</li>
@@ -2412,49 +2412,49 @@
 
                 <h3 style="margin: 1rem 0 0.5rem;">自动保存</h3>
                 <p style="color: var(--text-secondary); line-height: 1.6;">
-                    All changes are <strong>automatically saved</strong> to GitHub. No manual "Save" button needed!
+                    所有更改都将<strong>自动保存</strong>到 GitHub，无需手动点击"保存"按钮！
                 </p>
                 <ul style="color: var(--text-secondary); line-height: 1.8; margin-left: 1.5rem;">
-                    <li>Drag & drop tasks between columns → instant save</li>
-                    <li>Edit task details → instant save</li>
-                    <li>Add/remove subtasks → instant save</li>
-                    <li>Add comments → instant save</li>
+                    <li>在列间拖放任务 → 立即保存</li>
+                    <li>编辑任务详情 → 立即保存</li>
+                    <li>添加/删除子任务 → 立即保存</li>
+                    <li>添加评论 → 立即保存</li>
                 </ul>
 
                 <h3 style="margin: 1.5rem 0 0.5rem;">拖拽</h3>
                 <p style="color: var(--text-secondary); line-height: 1.6;">
-                    Click and drag any task card to move it between columns. The status updates automatically.
+                    点击并拖动任意任务卡片即可在列间移动，状态将自动更新。
                 </p>
 
                 <h3 style="margin: 1.5rem 0 0.5rem;">子任务</h3>
                 <p style="color: var(--text-secondary); line-height: 1.6;">
-                    Break down tasks into smaller steps. Click on a subtask to edit it inline.
+                    将任务拆解为更小的步骤，点击子任务可直接内联编辑。
                 </p>
 
                 <h3 style="margin: 1.5rem 0 0.5rem;">评论</h3>
                 <p style="color: var(--text-secondary); line-height: 1.6;">
-                    Add comments to tasks for context or feedback. Comments on <strong>Review</strong> tasks trigger notifications to MoltBot.
+                    为任务添加评论以提供背景说明或反馈。在<strong>审核</strong>任务上添加评论将触发 MoltBot 通知。
                 </p>
 
                 <h3 style="margin: 1.5rem 0 0.5rem;">项目和标签</h3>
                 <p style="color: var(--text-secondary); line-height: 1.6;">
-                    Organize tasks by project. Use the ⚙️ Settings to add new projects. Filter tasks using the project buttons.
+                    按项目组织任务，使用 ⚙️ 设置添加新项目，通过项目按钮筛选任务。
                 </p>
             </div>
 
             <div class="docs-section" style="margin-bottom: 2rem;">
                 <h2 style="color: var(--accent); margin-bottom: 1rem;">🤖 MoltBot 集成</h2>
                 <p style="color: var(--text-secondary); line-height: 1.6;">
-                    Mission Control is connected to MoltBot via webhooks. When you make changes:
+                    任务控制台通过 Webhook 与 MoltBot 相连。当您进行以下操作时：
                 </p>
                 <ul style="color: var(--text-secondary); line-height: 1.8; margin-left: 1.5rem;">
-                    <li><strong>Move task to "In Progress"</strong> → MoltBot receives a work order and starts processing</li>
-                    <li><strong>Add comment on Review task</strong> → MoltBot sees your feedback</li>
-                    <li><strong>MoltBot completes work</strong> → Task moves to "Review" automatically</li>
+                    <li><strong>将任务移至"进行中"</strong> → MoltBot 接收工作指令并开始处理</li>
+                    <li><strong>在审核任务上添加评论</strong> → MoltBot 收到您的反馈</li>
+                    <li><strong>MoltBot 完成工作</strong> → 任务自动移至"审核"</li>
                 </ul>
 
                 <div style="background: var(--bg-secondary); padding: 1rem; border-radius: 8px; margin-top: 1rem;">
-                    <strong>💡 Pro Tip:</strong> Write clear task descriptions and subtasks. The more detail you provide, the better MoltBot can execute the task.
+                    <strong>💡 提示：</strong>请填写清晰的任务描述和子任务，您提供的细节越多，MoltBot 执行任务的效果越好。
                 </div>
             </div>
 
@@ -2463,15 +2463,15 @@
                 <table style="width: 100%; border-collapse: collapse;">
                     <tr style="border-bottom: 1px solid var(--border-color);">
                         <td style="padding: 0.5rem; color: var(--text-secondary);"><code>Cmd/Ctrl + Shift + R</code></td>
-                        <td style="padding: 0.5rem;">Hard refresh (clear cache)</td>
+                        <td style="padding: 0.5rem;">强制刷新（清除缓存）</td>
                     </tr>
                     <tr style="border-bottom: 1px solid var(--border-color);">
                         <td style="padding: 0.5rem; color: var(--text-secondary);"><code>Escape</code></td>
-                        <td style="padding: 0.5rem;">Close modals</td>
+                        <td style="padding: 0.5rem;">关闭弹窗</td>
                     </tr>
                     <tr style="border-bottom: 1px solid var(--border-color);">
                         <td style="padding: 0.5rem; color: var(--text-secondary);"><code>Enter</code></td>
-                        <td style="padding: 0.5rem;">Save inline edits</td>
+                        <td style="padding: 0.5rem;">保存内联编辑</td>
                     </tr>
                 </table>
             </div>
@@ -2487,9 +2487,9 @@
                 </details>
 
                 <details style="margin-bottom: 1rem;">
-                    <summary style="cursor: pointer; font-weight: 500;">How do I create a new project?</summary>
+                    <summary style="cursor: pointer; font-weight: 500;">如何创建新项目？</summary>
                     <p style="color: var(--text-secondary); padding: 0.5rem 0 0 1rem;">
-                        Click the ⚙️ Settings button (when logged in) → Add a new project with ID, name, icon, and color.
+                        点击 ⚙️ 设置按钮（登录后）→ 填写 ID、名称、图标和颜色以添加新项目。
                     </p>
                 </details>
 
@@ -2507,7 +2507,7 @@
     <div id="view-people" class="view" style="display: none;">
         <div class="people-container">
             <div class="people-header">
-                <h1>👥 Team</h1>
+                <h1>👥 团队</h1>
                 <div class="people-stats" id="people-stats">
                     <!-- Stats filled by JS -->
                 </div>
@@ -2515,7 +2515,7 @@
             <div id="collaborators-container">
                 <div class="people-loading">
                     <div class="spinner"></div>
-                    <p>Loading collaborators...</p>
+                    <p>正在加载协作者...</p>
                 </div>
             </div>
         </div>
@@ -2530,17 +2530,17 @@
             </div>
             <div class="modal-body">
                 <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
-                    Connect your GitHub account to create, edit, and save tasks directly to the repository.
+                    连接您的 GitHub 账号，即可直接在仓库中创建、编辑和保存任务。
                 </p>
 
                 <div class="steps">
                     <div class="step">
                         <span class="step-number">1</span>
                         <div class="step-content">
-                            <div class="step-title">Create a Personal Access Token</div>
+                            <div class="step-title">创建个人访问令牌</div>
                             <div class="step-description">
                                 <a href="https://github.com/settings/tokens/new?scopes=repo&description=Mission%20Control%20Dashboard" target="_blank">
-                                    Click here to create a token →
+                                    点击此处创建令牌 →
                                 </a>
                             </div>
                         </div>
@@ -2548,15 +2548,15 @@
                     <div class="step">
                         <span class="step-number">2</span>
                         <div class="step-content">
-                            <div class="step-title">Select "repo" scope</div>
-                            <div class="step-description">This allows read/write access to repositories</div>
+                            <div class="step-title">选择 "repo" 权限范围</div>
+                            <div class="step-description">此权限允许对仓库进行读写操作</div>
                         </div>
                     </div>
                     <div class="step">
                         <span class="step-number">3</span>
                         <div class="step-content">
-                            <div class="step-title">Paste your token below</div>
-                            <div class="step-description">The token starts with "ghp_"</div>
+                            <div class="step-title">将令牌粘贴到下方</div>
+                            <div class="step-description">令牌以 "ghp_" 开头</div>
                         </div>
                     </div>
                 </div>
@@ -2569,15 +2569,15 @@
                     </div>
                     <div class="validation-loading" id="validation-loading">
                         <div class="spinner"></div>
-                        <span>Validating token...</span>
+                        <span>正在验证令牌...</span>
                     </div>
                     <div class="validation-success" id="validation-success">
                         <span>✓</span>
-                        <span>Connected as <strong id="validated-user"></strong></span>
+                        <span>已连接为 <strong id="validated-user"></strong></span>
                     </div>
                     <div class="validation-error" id="validation-error">
                         <span>✗</span>
-                        <span id="error-message">Invalid token</span>
+                        <span id="error-message">无效的令牌</span>
                     </div>
                 </div>
             </div>
@@ -2941,23 +2941,23 @@
                 // === PERMANENT (recurring tasks) ===
                 {
                     id: "task_p01",
-                    title: "Weekly backup check",
-                    description: "Verify all automated backups completed successfully",
+                    title: "每周备份检查",
+                    description: "验证所有自动备份已成功完成",
                     status: "permanent",
                     project: "devops",
                     tags: ["devops", "maintenance"],
                     subtasks: [
-                        { id: "sub_001", title: "Check database backups", done: false },
-                        { id: "sub_002", title: "Verify file storage sync", done: false },
-                        { id: "sub_003", title: "Test restore procedure", done: false }
+                        { id: "sub_001", title: "检查数据库备份", done: false },
+                        { id: "sub_002", title: "验证文件存储同步", done: false },
+                        { id: "sub_003", title: "测试恢复流程", done: false }
                     ],
                     priority: "high",
                     createdAt: "2026-01-15T09:00:00Z"
                 },
                 {
                     id: "task_p02",
-                    title: "Review analytics dashboard",
-                    description: "Check KPIs and identify trends or anomalies",
+                    title: "审查数据分析仪表板",
+                    description: "检查关键指标，识别趋势或异常",
                     status: "permanent",
                     project: "growth",
                     tags: ["growth", "analytics"],
@@ -2968,55 +2968,55 @@
                 // === BACKLOG ===
                 {
                     id: "task_001",
-                    title: "Redesign landing page",
-                    description: "Modern refresh with improved conversion focus and mobile-first approach",
+                    title: "重新设计登陆页",
+                    description: "现代化改版，聚焦转化率提升和移动优先设计",
                     status: "backlog",
                     project: "design",
                     tags: ["design", "growth"],
                     subtasks: [
-                        { id: "sub_001", title: "Competitor analysis", done: false },
-                        { id: "sub_002", title: "Wireframe concepts", done: false },
-                        { id: "sub_003", title: "Design mockups", done: false },
-                        { id: "sub_004", title: "Get stakeholder feedback", done: false }
+                        { id: "sub_001", title: "竞品分析", done: false },
+                        { id: "sub_002", title: "线框图概念设计", done: false },
+                        { id: "sub_003", title: "设计视觉稿", done: false },
+                        { id: "sub_004", title: "收集利益相关方反馈", done: false }
                     ],
                     priority: "high",
                     createdAt: "2026-01-20T10:00:00Z"
                 },
                 {
                     id: "task_002",
-                    title: "Plan weekend hiking trip",
-                    description: "Research trails, check weather, prepare gear for Saturday adventure",
+                    title: "规划周末徒步旅行",
+                    description: "研究路线、查看天气、为周六探险准备装备",
                     status: "backlog",
                     project: "personal",
                     tags: ["personal", "wellness"],
                     subtasks: [
-                        { id: "sub_001", title: "Choose trail (moderate difficulty)", done: false },
-                        { id: "sub_002", title: "Check weather forecast", done: false },
-                        { id: "sub_003", title: "Pack essentials", done: false }
+                        { id: "sub_001", title: "选择路线（中等难度）", done: false },
+                        { id: "sub_002", title: "查看天气预报", done: false },
+                        { id: "sub_003", title: "准备必要装备", done: false }
                     ],
                     priority: "low",
                     createdAt: "2026-01-25T18:00:00Z"
                 },
                 {
                     id: "task_003",
-                    title: "Set up CI/CD pipeline",
-                    description: "Automate testing and deployment for the main project repository",
+                    title: "搭建 CI/CD 流水线",
+                    description: "为主项目仓库自动化测试和部署流程",
                     status: "backlog",
                     project: "devops",
                     tags: ["devops", "automation"],
                     subtasks: [
-                        { id: "sub_001", title: "Configure GitHub Actions", done: false },
-                        { id: "sub_002", title: "Add test coverage reports", done: false },
-                        { id: "sub_003", title: "Set up staging environment", done: false },
-                        { id: "sub_004", title: "Document deployment process", done: false }
+                        { id: "sub_001", title: "配置 GitHub Actions", done: false },
+                        { id: "sub_002", title: "添加测试覆盖率报告", done: false },
+                        { id: "sub_003", title: "搭建预发布环境", done: false },
+                        { id: "sub_004", title: "编写部署流程文档", done: false }
                     ],
                     priority: "high",
                     createdAt: "2026-01-22T14:00:00Z"
                 },
                 {
                     id: "task_004",
-                    title: "Research email automation tools",
-                    description: "Compare options for newsletter and drip campaigns",
+                    title: "调研邮件自动化工具",
+                    description: "比较新闻订阅和滴灌营销活动的各种方案",
                     status: "backlog",
                     project: "growth",
                     tags: ["growth", "research"],
@@ -3027,47 +3027,47 @@
                 // === IN PROGRESS ===
                 {
                     id: "task_005",
-                    title: "Implement dark mode",
-                    description: "Add theme toggle with system preference detection and persistence",
+                    title: "实现深色模式",
+                    description: "添加主题切换功能，支持系统偏好检测和持久化",
                     status: "in_progress",
                     project: "devops",
                     tags: ["devops", "design"],
                     subtasks: [
-                        { id: "sub_001", title: "Define color variables", done: true },
-                        { id: "sub_002", title: "Create theme toggle component", done: true },
-                        { id: "sub_003", title: "Persist preference in localStorage", done: false },
-                        { id: "sub_004", title: "Test across browsers", done: false }
+                        { id: "sub_001", title: "定义颜色变量", done: true },
+                        { id: "sub_002", title: "创建主题切换组件", done: true },
+                        { id: "sub_003", title: "将偏好持久化到 localStorage", done: false },
+                        { id: "sub_004", title: "跨浏览器测试", done: false }
                     ],
                     priority: "medium",
                     createdAt: "2026-01-23T09:00:00Z"
                 },
                 {
                     id: "task_006",
-                    title: "Write Q1 blog post",
-                    description: "Industry trends article for company blog, target 1500 words",
+                    title: "撰写 Q1 博客文章",
+                    description: "为公司博客撰写行业趋势文章，目标 1500 字",
                     status: "in_progress",
                     project: "growth",
                     tags: ["growth", "content"],
                     subtasks: [
-                        { id: "sub_001", title: "Outline key points", done: true },
-                        { id: "sub_002", title: "Write first draft", done: true },
-                        { id: "sub_003", title: "Add visuals and examples", done: false },
-                        { id: "sub_004", title: "SEO optimization", done: false }
+                        { id: "sub_001", title: "梳理核心要点", done: true },
+                        { id: "sub_002", title: "撰写初稿", done: true },
+                        { id: "sub_003", title: "添加图表和示例", done: false },
+                        { id: "sub_004", title: "SEO 优化", done: false }
                     ],
                     priority: "medium",
                     createdAt: "2026-01-21T10:00:00Z"
                 },
                 {
                     id: "task_007",
-                    title: "Organize home office",
-                    description: "Declutter desk, improve cable management, add plants",
+                    title: "整理家庭办公室",
+                    description: "清理桌面、改善线缆管理、添加绿植",
                     status: "in_progress",
                     project: "personal",
                     tags: ["personal", "wellness"],
                     subtasks: [
-                        { id: "sub_001", title: "Sort through papers", done: true },
-                        { id: "sub_002", title: "Order cable organizers", done: true },
-                        { id: "sub_003", title: "Buy desk plant", done: false }
+                        { id: "sub_001", title: "整理文件资料", done: true },
+                        { id: "sub_002", title: "订购线缆收纳工具", done: true },
+                        { id: "sub_003", title: "购买桌面绿植", done: false }
                     ],
                     priority: "low",
                     createdAt: "2026-01-26T15:00:00Z"
@@ -3075,31 +3075,31 @@
                 // === REVIEW ===
                 {
                     id: "task_008",
-                    title: "API documentation update",
-                    description: "Complete overhaul of REST API docs with examples and error codes",
+                    title: "API 文档更新",
+                    description: "全面改版 REST API 文档，添加示例和错误码说明",
                     status: "review",
                     project: "devops",
                     tags: ["devops", "documentation"],
                     subtasks: [
-                        { id: "sub_001", title: "Document all endpoints", done: true },
-                        { id: "sub_002", title: "Add request/response examples", done: true },
-                        { id: "sub_003", title: "Include authentication guide", done: true },
-                        { id: "sub_004", title: "Peer review", done: false }
+                        { id: "sub_001", title: "记录所有接口端点", done: true },
+                        { id: "sub_002", title: "添加请求/响应示例", done: true },
+                        { id: "sub_003", title: "补充身份验证指南", done: true },
+                        { id: "sub_004", title: "同行评审", done: false }
                     ],
                     priority: "high",
                     createdAt: "2026-01-18T09:00:00Z"
                 },
                 {
                     id: "task_009",
-                    title: "New logo concepts",
-                    description: "Three variations for brand refresh, awaiting team vote",
+                    title: "新 Logo 概念设计",
+                    description: "品牌焕新的三种设计方案，等待团队投票决定",
                     status: "review",
                     project: "design",
                     tags: ["design", "branding"],
                     subtasks: [
-                        { id: "sub_001", title: "Minimalist version", done: true },
-                        { id: "sub_002", title: "Bold/modern version", done: true },
-                        { id: "sub_003", title: "Classic refined version", done: true }
+                        { id: "sub_001", title: "简约风格版本", done: true },
+                        { id: "sub_002", title: "粗犷/现代风格版本", done: true },
+                        { id: "sub_003", title: "经典精致风格版本", done: true }
                     ],
                     priority: "medium",
                     createdAt: "2026-01-19T11:00:00Z"
@@ -3107,46 +3107,46 @@
                 // === DONE ===
                 {
                     id: "task_010",
-                    title: "Fix login redirect bug",
-                    description: "Users were redirected to wrong page after OAuth login",
+                    title: "修复登录重定向 Bug",
+                    description: "用户在 OAuth 登录后被重定向到错误页面",
                     status: "done",
                     project: "devops",
                     tags: ["devops", "bugfix"],
                     subtasks: [
-                        { id: "sub_001", title: "Reproduce issue", done: true },
-                        { id: "sub_002", title: "Identify root cause", done: true },
-                        { id: "sub_003", title: "Implement fix", done: true },
-                        { id: "sub_004", title: "Write regression test", done: true }
+                        { id: "sub_001", title: "复现问题", done: true },
+                        { id: "sub_002", title: "定位根本原因", done: true },
+                        { id: "sub_003", title: "实施修复", done: true },
+                        { id: "sub_004", title: "编写回归测试", done: true }
                     ],
                     priority: "high",
                     createdAt: "2026-01-17T08:00:00Z"
                 },
                 {
                     id: "task_011",
-                    title: "Quarterly tax prep",
-                    description: "Gather documents and submit to accountant",
+                    title: "季度税务准备",
+                    description: "收集文件并提交给会计师",
                     status: "done",
                     project: "personal",
                     tags: ["personal", "finance"],
                     subtasks: [
-                        { id: "sub_001", title: "Export bank statements", done: true },
-                        { id: "sub_002", title: "Organize receipts", done: true },
-                        { id: "sub_003", title: "Send to accountant", done: true }
+                        { id: "sub_001", title: "导出银行对账单", done: true },
+                        { id: "sub_002", title: "整理收据", done: true },
+                        { id: "sub_003", title: "发送给会计师", done: true }
                     ],
                     priority: "high",
                     createdAt: "2026-01-10T09:00:00Z"
                 },
                 {
                     id: "task_012",
-                    title: "Social media content calendar",
-                    description: "Plan posts for February across all platforms",
+                    title: "社交媒体内容日历",
+                    description: "规划二月份各平台的发帖计划",
                     status: "done",
                     project: "growth",
                     tags: ["growth", "content"],
                     subtasks: [
-                        { id: "sub_001", title: "Identify key dates/events", done: true },
-                        { id: "sub_002", title: "Draft post ideas", done: true },
-                        { id: "sub_003", title: "Schedule in buffer", done: true }
+                        { id: "sub_001", title: "确定重要日期/活动节点", done: true },
+                        { id: "sub_002", title: "起草发帖创意", done: true },
+                        { id: "sub_003", title: "在 Buffer 中安排发布", done: true }
                     ],
                     priority: "medium",
                     createdAt: "2026-01-12T14:00:00Z"
@@ -3154,17 +3154,17 @@
             ],
             projects: [
                 { id: "devops", name: "DevOps", color: "#3b82f6", icon: "💻" },
-                { id: "growth", name: "Growth", color: "#10b981", icon: "📈" },
-                { id: "design", name: "Design", color: "#f59e0b", icon: "🎨" },
-                { id: "personal", name: "Personal", color: "#8b5cf6", icon: "🏠" },
-                { id: "wellness", name: "Wellness", color: "#ec4899", icon: "🧘" }
+                { id: "growth", name: "增长", color: "#10b981", icon: "📈" },
+                { id: "design", name: "设计", color: "#f59e0b", icon: "🎨" },
+                { id: "personal", name: "个人", color: "#8b5cf6", icon: "🏠" },
+                { id: "wellness", name: "健康", color: "#ec4899", icon: "🧘" }
             ],
             activities: [
-                { type: "completed", actor: "You", task: "Social media content calendar", time: "2 hours ago" },
-                { type: "moved", actor: "AI Assistant", task: "API documentation update", from: "in_progress", to: "review", time: "4 hours ago" },
-                { type: "created", actor: "You", task: "Plan weekend hiking trip", time: "yesterday" },
-                { type: "completed", actor: "You", task: "Fix login redirect bug", time: "2 days ago" },
-                { type: "moved", actor: "AI Assistant", task: "Implement dark mode", from: "backlog", to: "in_progress", time: "3 days ago" }
+                { type: "completed", actor: "你", task: "社交媒体内容日历", time: "2 小时前" },
+                { type: "moved", actor: "AI 助手", task: "API 文档更新", from: "in_progress", to: "review", time: "4 小时前" },
+                { type: "created", actor: "你", task: "规划周末徒步旅行", time: "昨天" },
+                { type: "completed", actor: "你", task: "修复登录重定向 Bug", time: "2 天前" },
+                { type: "moved", actor: "AI 助手", task: "实现深色模式", from: "backlog", to: "in_progress", time: "3 天前" }
             ],
             lastUpdated: new Date().toISOString()
         };
@@ -3388,7 +3388,7 @@
             countEl.textContent = crons.filter(c => c.enabled).length;
             
             if (crons.length === 0) {
-                container.innerHTML = '<div class="empty-state">No recurring jobs</div>';
+                container.innerHTML = '<div class="empty-state">暂无定时任务</div>';
                 return;
             }
             
@@ -3739,7 +3739,7 @@
                 const count = document.getElementById(`count-${status}`);
                 count.textContent = tasks.length;
                 container.innerHTML = tasks.length === 0
-                    ? '<div class="empty-state">No tasks</div>'
+                    ? '<div class="empty-state">暂无任务</div>'
                     : tasks.map(renderTaskCard).join('');
             });
 
@@ -4099,7 +4099,7 @@
                     task: task.title,
                     from: oldStatus,
                     to: newStatus,
-                    time: 'just now'
+                    time: '刚刚'
                 });
                 renderActivity();
             }
@@ -4171,7 +4171,7 @@
                 // Disable transitions during DOM update
                 container.classList.add('no-transition');
                 container.innerHTML = tasks.length === 0
-                    ? '<div class="empty-state">No tasks</div>'
+                    ? '<div class="empty-state">暂无任务</div>'
                     : tasks.map(renderTaskCard).join('');
 
                 // Force reflow
@@ -4251,13 +4251,16 @@
 
         function getActionText(activity) {
             switch(activity.type) {
-                case 'created': return ' created ';
-                case 'moved': return ` moved to ${activity.to} `;
-                case 'completed': return ' completed ';
-                case 'deleted': return ' deleted ';
-                case 'archive': return ' archived ';
-                case 'unarchive': return ' unarchived ';
-                default: return ' updated ';
+                case 'created': return ' 创建了 ';
+                case 'moved': {
+                    const statusNames = {permanent:'固定任务',backlog:'待办',in_progress:'进行中',review:'审核',done:'已完成',scheduled:'已计划'};
+                    return ` 移至 ${statusNames[activity.to] || activity.to} `;
+                }
+                case 'completed': return ' 完成了 ';
+                case 'deleted': return ' 删除了 ';
+                case 'archive': return ' 归档了 ';
+                case 'unarchive': return ' 取消归档了 ';
+                default: return ' 更新了 ';
             }
         }
 
@@ -4273,7 +4276,7 @@
                 type: type,
                 actor: STATE.user?.login || 'User',
                 task: taskName,
-                time: 'just now'
+                time: '刚刚'
             });
             
             renderActivity();
@@ -4287,7 +4290,7 @@
                 `<button class="filter-btn" data-filter="${p.id}" onclick="filterByProject('${p.id}')">${p.icon} ${p.name}</button>`
             ).join('');
             container.innerHTML = `
-                <button class="filter-btn active" data-filter="all" onclick="filterByProject('all')">All projects</button>
+                <button class="filter-btn active" data-filter="all" onclick="filterByProject('all')">全部项目</button>
                 ${projectButtons}
             `;
         }
@@ -4476,7 +4479,7 @@
                         <button class="modal-close" onclick="closeArchiveView()">&times;</button>
                     </div>
                     <div class="modal-body" style="overflow-y: auto; max-height: 50vh;">
-                        ${archivedTasks.length === 0 ? '<div class="empty-state">No archived tasks</div>' : 
+                        ${archivedTasks.length === 0 ? '<div class="empty-state">暂无已归档任务</div>' : 
                           archivedTasks.map(task => `
                             <div style="padding: 0.75rem; background: var(--bg-secondary); border-radius: 6px; margin-bottom: 0.5rem; display: flex; justify-content: space-between; align-items: center;">
                                 <div>
@@ -4634,7 +4637,7 @@
             if (!container) return;
 
             if (currentTaskTags.length === 0) {
-                container.innerHTML = '<span style="color: var(--text-secondary); font-size: 0.875rem;">No tags</span>';
+                container.innerHTML = '<span style="color: var(--text-secondary); font-size: 0.875rem;">暂无标签</span>';
                 return;
             }
 
@@ -4711,7 +4714,7 @@
         function renderSubtasks(task) {
             const container = document.getElementById('subtasks-list');
             if (!task.subtasks || task.subtasks.length === 0) {
-                container.innerHTML = '<div style="color: var(--text-secondary); font-size: 0.875rem;">No subtasks yet</div>';
+                container.innerHTML = '<div style="color: var(--text-secondary); font-size: 0.875rem;">暂无子任务</div>';
                 return;
             }
             container.innerHTML = task.subtasks.map(sub => `
@@ -4786,7 +4789,7 @@
             const container = document.getElementById('comments-list');
             const comments = task.comments || [];
             if (comments.length === 0) {
-                container.innerHTML = '<div style="color: var(--text-secondary); font-size: 0.875rem;">No comments yet</div>';
+                container.innerHTML = '<div style="color: var(--text-secondary); font-size: 0.875rem;">暂无评论</div>';
                 return;
             }
             container.innerHTML = comments.map((c, idx) => `
@@ -4873,10 +4876,10 @@
             const diffHour = Math.floor(diffMs / 3600000);
             const diffDay = Math.floor(diffMs / 86400000);
 
-            if (diffMin < 1) return 'just now';
-            if (diffMin < 60) return diffMin + ' min ago';
-            if (diffHour < 24) return diffHour + ' hours ago';
-            return diffDay + ' days ago';
+            if (diffMin < 1) return '刚刚';
+            if (diffMin < 60) return diffMin + ' 分钟前';
+            if (diffHour < 24) return diffHour + ' 小时前';
+            return diffDay + ' 天前';
         }
 
         function toggleSubtask(taskId, subtaskId) {
@@ -4982,8 +4985,8 @@
             renderTagChips();
 
             // Clear subtasks and comments for new task
-            document.getElementById('subtasks-list').innerHTML = '<div style="color: var(--text-secondary); font-size: 0.875rem;">No subtasks yet</div>';
-            document.getElementById('comments-list').innerHTML = '<div style="color: var(--text-secondary); font-size: 0.875rem;">No comments yet</div>';
+            document.getElementById('subtasks-list').innerHTML = '<div style="color: var(--text-secondary); font-size: 0.875rem;">暂无子任务</div>';
+            document.getElementById('comments-list').innerHTML = '<div style="color: var(--text-secondary); font-size: 0.875rem;">暂无评论</div>';
 
             document.getElementById('task-modal').classList.add('visible');
         }
@@ -5218,7 +5221,7 @@
             const projects = STATE.data?.projects || [];
 
             if (projects.length === 0) {
-                container.innerHTML = '<div style="color: var(--text-secondary);">No projects yet</div>';
+                container.innerHTML = '<div style="color: var(--text-secondary);">暂无项目</div>';
                 return;
             }
 
@@ -5498,7 +5501,7 @@
             countEl.textContent = templates.length;
             
             if (templates.length === 0) {
-                container.innerHTML = '<div class="empty-state">No templates yet</div>';
+                container.innerHTML = '<div class="empty-state">暂无模板</div>';
                 return;
             }
             
@@ -5543,8 +5546,8 @@
             currentTaskTags = [];
             renderTagChips();
             
-            document.getElementById('subtasks-list').innerHTML = '<div style="color: var(--text-secondary); font-size: 0.875rem;">No subtasks yet</div>';
-            document.getElementById('comments-list').innerHTML = '<div style="color: var(--text-secondary); font-size: 0.875rem;">No comments yet</div>';
+            document.getElementById('subtasks-list').innerHTML = '<div style="color: var(--text-secondary); font-size: 0.875rem;">暂无子任务</div>';
+            document.getElementById('comments-list').innerHTML = '<div style="color: var(--text-secondary); font-size: 0.875rem;">暂无评论</div>';
             
             document.getElementById('task-modal').classList.add('visible');
         }
@@ -5692,18 +5695,18 @@
             dialog.innerHTML = `
                 <div class="modal" style="max-width: 400px;">
                     <div class="modal-header">
-                        <h2 class="modal-title">✅ Task Completed</h2>
+                        <h2 class="modal-title">✅ 任务已完成</h2>
                         <button class="modal-close" onclick="closeTemplateDialog()">&times;</button>
                     </div>
                     <div class="modal-body">
-                        <p style="margin-bottom: 1rem;">This task was created from a template. What would you like to do?</p>
+                        <p style="margin-bottom: 1rem;">此任务由模板创建，您希望如何处理？</p>
                     </div>
                     <div class="modal-footer" style="flex-direction: column; gap: 0.5rem;">
                         <button class="btn btn-primary" style="width: 100%;" onclick="executeOnlyFromDialog('${taskId}')">
-                            ▶ Just Execute (stays available)
+                            ▶ 仅执行（保持可用）
                         </button>
                         <button class="btn btn-secondary" style="width: 100%;" onclick="archiveFromDialog('${taskId}')">
-                            📦 Archive Task
+                            📦 归档任务
                         </button>
                     </div>
                 </div>
@@ -5758,7 +5761,7 @@
             countEl.textContent = scheduled.length;
             
             if (scheduled.length === 0) {
-                container.innerHTML = '<div class="empty-state">No scheduled tasks</div>';
+                container.innerHTML = '<div class="empty-state">暂无计划任务</div>';
                 return;
             }
             
@@ -5853,28 +5856,28 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <label class="form-label">标题</label>
-                            <input type="text" class="form-input" id="scheduled-title" placeholder="Task title">
+                            <input type="text" class="form-input" id="scheduled-title" placeholder="任务标题">
                         </div>
                         <div class="form-group">
                             <label class="form-label">描述</label>
-                            <textarea class="form-input" id="scheduled-description" rows="2" placeholder="Task description"></textarea>
+                            <textarea class="form-input" id="scheduled-description" rows="2" placeholder="任务描述"></textarea>
                         </div>
                         <div class="form-group">
-                            <label class="form-label">Scheduled For</label>
+                            <label class="form-label">计划时间</label>
                             <input type="datetime-local" class="form-input" id="scheduled-datetime" value="${dateStr}">
                         </div>
                         <div class="form-group">
-                            <label class="form-label">Priority</label>
+                            <label class="form-label">优先级</label>
                             <select class="form-input" id="scheduled-priority">
-                                <option value="low">Low</option>
-                                <option value="medium" selected>Medium</option>
-                                <option value="high">High</option>
+                                <option value="low">低</option>
+                                <option value="medium" selected>中</option>
+                                <option value="high">高</option>
                             </select>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-secondary" onclick="closeScheduledTaskDialog()">Cancel</button>
-                        <button class="btn btn-primary" onclick="saveScheduledTask()">Schedule Task</button>
+                        <button class="btn btn-secondary" onclick="closeScheduledTaskDialog()">取消</button>
+                        <button class="btn btn-primary" onclick="saveScheduledTask()">创建计划任务</button>
                     </div>
                 </div>
             `;
@@ -5899,7 +5902,7 @@
             }
             
             if (!datetime) {
-                showToast('error', 'Please select a date and time');
+                showToast('error', '请选择日期和时间');
                 return;
             }
             
@@ -6084,7 +6087,7 @@
                     task: task.title,
                     from: oldStatus,
                     to: newStatus,
-                    time: 'just now'
+                    time: '刚刚'
                 });
                 renderActivity();
             }
@@ -6197,28 +6200,28 @@
             dialog.innerHTML = `
                 <div class="modal" style="max-width: 550px;">
                     <div class="modal-header">
-                        <h2 class="modal-title">🔄 Edit Cron Job</h2>
+                        <h2 class="modal-title">🔄 编辑定时任务</h2>
                         <button class="modal-close" onclick="closeCronEditor()">&times;</button>
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
-                            <label class="form-label">Name</label>
+                            <label class="form-label">名称</label>
                             <input type="text" class="form-input" id="cron-name" value="${escapeHtml(cron.name)}">
                         </div>
                         <div class="form-group">
-                            <label class="form-label">Prompt / Command</label>
-                            <textarea class="form-input" id="cron-prompt" rows="4" placeholder="What should this cron do?">${escapeHtml(cron.prompt || '')}</textarea>
+                            <label class="form-label">提示词 / 命令</label>
+                            <textarea class="form-input" id="cron-prompt" rows="4" placeholder="此定时任务应执行什么操作？">${escapeHtml(cron.prompt || '')}</textarea>
                         </div>
                         <div class="form-group">
-                            <label class="form-label">Schedule (Cron Expression)</label>
+                            <label class="form-label">调度计划（Cron 表达式）</label>
                             <input type="text" class="form-input" id="cron-schedule" value="${cron.schedule}" placeholder="0 8 * * *">
                             <div class="form-hint" id="cron-schedule-hint">
-                                Human readable: <strong>${cron.scheduleHuman || 'Unknown'}</strong>
+                                可读形式：<strong>${cron.scheduleHuman || 'Unknown'}</strong>
                             </div>
                             <div id="cron-validation-error" style="color: var(--accent-red); font-size: 0.8rem; margin-top: 0.25rem; display: none;"></div>
                         </div>
                         <div class="form-group">
-                            <label class="form-label">Timezone</label>
+                            <label class="form-label">时区</label>
                             <select class="form-input" id="cron-timezone">
                                 <option value="Europe/Berlin" ${cron.timezone === 'Europe/Berlin' ? 'selected' : ''}>Europe/Berlin</option>
                                 <option value="UTC" ${cron.timezone === 'UTC' ? 'selected' : ''}>UTC</option>
@@ -6230,20 +6233,20 @@
                         <div class="form-group">
                             <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
                                 <input type="checkbox" id="cron-enabled" ${cron.enabled ? 'checked' : ''}>
-                                <span>Enabled</span>
+                                <span>已启用</span>
                             </label>
                         </div>
                         <div class="form-group" style="background: var(--bg-secondary); padding: 1rem; border-radius: 8px;">
-                            <label class="form-label" style="margin-bottom: 0.5rem;">📅 Next 5 Runs</label>
+                            <label class="form-label" style="margin-bottom: 0.5rem;">📅 未来 5 次执行</label>
                             <div id="cron-next-runs" style="font-size: 0.85rem; color: var(--text-secondary);">
                                 ${generateNextRuns(cron.schedule, cron.timezone)}
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-secondary" style="margin-right: auto;" onclick="convertCronToTask('${cronId}')">📋 As Task</button>
-                        <button class="btn btn-secondary" onclick="closeCronEditor()">Cancel</button>
-                        <button class="btn btn-primary" onclick="saveCronChanges('${cronId}')">Save Changes</button>
+                        <button class="btn btn-secondary" style="margin-right: auto;" onclick="convertCronToTask('${cronId}')">📋 转为任务</button>
+                        <button class="btn btn-secondary" onclick="closeCronEditor()">取消</button>
+                        <button class="btn btn-primary" onclick="saveCronChanges()">保存更改</button>
                     </div>
                 </div>
             `;
@@ -6271,7 +6274,7 @@
             // Simple cron validation (5 fields)
             const parts = schedule.trim().split(/\s+/);
             if (parts.length !== 5) {
-                errorEl.textContent = 'Cron expression must have 5 fields (minute hour day month weekday)';
+                errorEl.textContent = 'Cron 表达式必须包含 5 个字段（分钟 小时 日期 月份 星期）';
                 errorEl.style.display = 'block';
                 return false;
             }
@@ -6287,7 +6290,7 @@
             
             for (let i = 0; i < 5; i++) {
                 if (!isValidCronField(parts[i], ranges[i])) {
-                    errorEl.textContent = `Invalid ${ranges[i].name} field: ${parts[i]}`;
+                    errorEl.textContent = `无效的 ${ranges[i].name} 字段：${parts[i]}`;
                     errorEl.style.display = 'block';
                     return false;
                 }
@@ -6295,7 +6298,7 @@
             
             errorEl.style.display = 'none';
             const humanReadable = cronToHuman(schedule);
-            hintEl.innerHTML = `Human readable: <strong>${humanReadable}</strong>`;
+            hintEl.innerHTML = `可读形式：<strong>${humanReadable}</strong>`;
             nextRunsEl.innerHTML = generateNextRuns(schedule, document.getElementById('cron-timezone')?.value || 'Europe/Berlin');
             return true;
         }
@@ -6327,19 +6330,19 @@
             
             // Simple patterns
             if (minute !== '*' && hour !== '*' && day === '*' && month === '*' && weekday === '*') {
-                return `Daily at ${hour.padStart(2, '0')}:${minute.padStart(2, '0')}`;
+                return `每天 ${hour.padStart(2, '0')}:${minute.padStart(2, '0')}`;
             }
             if (minute !== '*' && hour !== '*' && day === '*' && month === '*' && weekday !== '*') {
-                const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+                const days = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
                 const dayName = days[parseInt(weekday)] || weekday;
-                return `${dayName} at ${hour.padStart(2, '0')}:${minute.padStart(2, '0')}`;
+                return `每周${dayName} ${hour.padStart(2, '0')}:${minute.padStart(2, '0')}`;
             }
             if (minute === '0' && hour === '*' && day === '*' && month === '*' && weekday === '*') {
-                return 'Every hour';
+                return '每小时';
             }
             if (minute.includes('/')) {
                 const interval = minute.split('/')[1];
-                return `Every ${interval} minutes`;
+                return `每 ${interval} 分钟`;
             }
             
             return schedule;
@@ -6497,7 +6500,7 @@
             dialog.innerHTML = `
                 <div class="modal" style="max-width: 500px;">
                     <div class="modal-header">
-                        <h2 class="modal-title">⏰ Convert to Cron</h2>
+                        <h2 class="modal-title">⏰ 转换为定时任务</h2>
                         <button class="modal-close" onclick="closeTaskToCronWizard()">&times;</button>
                     </div>
                     <div class="modal-body">
@@ -6505,7 +6508,7 @@
                             <div class="step">
                                 <span class="step-number">1</span>
                                 <div class="step-content">
-                                    <div class="step-title">Choose Schedule Type</div>
+                                    <div class="step-title">选择调度类型</div>
                                 </div>
                             </div>
                         </div>
@@ -6513,63 +6516,63 @@
                         <div id="wizard-step-1">
                             <div style="display: grid; gap: 0.5rem;">
                                 <button class="btn btn-secondary" style="justify-content: flex-start;" onclick="setScheduleType('daily')">
-                                    📅 Daily
+                                    📅 每天
                                 </button>
                                 <button class="btn btn-secondary" style="justify-content: flex-start;" onclick="setScheduleType('weekly')">
-                                    📆 Weekly
+                                    📆 每周
                                 </button>
                                 <button class="btn btn-secondary" style="justify-content: flex-start;" onclick="setScheduleType('monthly')">
-                                    🗓️ Monthly
+                                    🗓️ 每月
                                 </button>
                                 <button class="btn btn-secondary" style="justify-content: flex-start;" onclick="setScheduleType('custom')">
-                                    ⚙️ Custom Cron Expression
+                                    ⚙️ 自定义 Cron 表达式
                                 </button>
                             </div>
                         </div>
                         
                         <div id="wizard-step-2" style="display: none;">
                             <div class="form-group">
-                                <label class="form-label">Time</label>
+                                <label class="form-label">时间</label>
                                 <input type="time" class="form-input" id="wizard-time" value="08:00">
                             </div>
                             <div class="form-group" id="wizard-weekday-group" style="display: none;">
-                                <label class="form-label">Day of Week</label>
+                                <label class="form-label">星期几</label>
                                 <select class="form-input" id="wizard-weekday">
-                                    <option value="1">Monday</option>
-                                    <option value="2">Tuesday</option>
-                                    <option value="3">Wednesday</option>
-                                    <option value="4">Thursday</option>
-                                    <option value="5">Friday</option>
-                                    <option value="6">Saturday</option>
-                                    <option value="0">Sunday</option>
+                                    <option value="1">周一</option>
+                                    <option value="2">周二</option>
+                                    <option value="3">周三</option>
+                                    <option value="4">周四</option>
+                                    <option value="5">周五</option>
+                                    <option value="6">周六</option>
+                                    <option value="0">周日</option>
                                 </select>
                             </div>
                             <div class="form-group" id="wizard-monthday-group" style="display: none;">
-                                <label class="form-label">Day of Month</label>
+                                <label class="form-label">每月第几天</label>
                                 <input type="number" class="form-input" id="wizard-monthday" min="1" max="31" value="1">
                             </div>
                             <div class="form-group" id="wizard-custom-group" style="display: none;">
-                                <label class="form-label">Cron Expression</label>
+                                <label class="form-label">Cron 表达式</label>
                                 <input type="text" class="form-input" id="wizard-custom-cron" placeholder="0 8 * * *">
                             </div>
                         </div>
                         
                         <div id="wizard-step-3" style="display: none;">
                             <div class="form-group">
-                                <label class="form-label">Cron Name</label>
+                                <label class="form-label">定时任务名称</label>
                                 <input type="text" class="form-input" id="cron-wizard-title" value="${task.title}">
                             </div>
                             <div style="background: var(--bg-secondary); padding: 1rem; border-radius: 8px;">
-                                <strong>Summary:</strong>
+                                <strong>摘要：</strong>
                                 <div id="wizard-summary" style="margin-top: 0.5rem; color: var(--text-secondary);"></div>
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-secondary" id="wizard-back" onclick="wizardBack()" style="display: none;">Back</button>
-                        <button class="btn btn-secondary" onclick="closeTaskToCronWizard()">Cancel</button>
-                        <button class="btn btn-primary" id="wizard-next" onclick="wizardNext('${taskId}')" style="display: none;">Next</button>
-                        <button class="btn btn-primary" id="wizard-create" onclick="createCronFromTask('${taskId}')" style="display: none;">Create Cron</button>
+                        <button class="btn btn-secondary" id="wizard-back" onclick="wizardBack()" style="display: none;">返回</button>
+                        <button class="btn btn-secondary" onclick="closeTaskToCronWizard()">取消</button>
+                        <button class="btn btn-primary" id="wizard-next" onclick="wizardNext()">下一步</button>
+                        <button class="btn btn-primary" id="wizard-create" onclick="createCronFromTask()">创建定时任务</button>
                     </div>
                 </div>
             `;
@@ -6620,16 +6623,16 @@
             
             if (type === 'daily') {
                 schedule = `${minute} ${hour} * * *`;
-                scheduleDesc = `Daily at ${time}`;
+                scheduleDesc = `每天 ${time}`;
             } else if (type === 'weekly') {
                 const weekday = document.getElementById('wizard-weekday').value;
-                const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+                const dayNames = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
                 schedule = `${minute} ${hour} * * ${weekday}`;
                 scheduleDesc = `Every ${dayNames[parseInt(weekday)]} at ${time}`;
             } else if (type === 'monthly') {
                 const monthday = document.getElementById('wizard-monthday').value;
                 schedule = `${minute} ${hour} ${monthday} * *`;
-                scheduleDesc = `Monthly on day ${monthday} at ${time}`;
+                scheduleDesc = `每月${monthday}日 ${time}`;
             } else {
                 schedule = document.getElementById('wizard-custom-cron').value;
                 scheduleDesc = schedule;
@@ -6652,10 +6655,10 @@
             document.getElementById('wizard-create').style.display = 'inline-flex';
             
             document.getElementById('wizard-summary').innerHTML = `
-                <strong>Name:</strong> ${task.title}<br>
-                <strong>Schedule:</strong> ${scheduleDesc}<br>
-                <strong>Cron:</strong> <code>${schedule}</code><br>
-                <strong>Original task will be archived.</strong>
+                <strong>名称：</strong> ${task.title}<br>
+                <strong>调度计划：</strong> ${scheduleDesc}<br>
+                <strong>Cron：</strong> <code>${schedule}</code><br>
+                <strong>原始任务将被归档。</strong>
             `;
             
             window.wizardState.step = 3;
@@ -6859,7 +6862,7 @@
             container.innerHTML = `
                 <div class="people-loading">
                     <div class="spinner"></div>
-                    <p>Loading collaborators...</p>
+                    <p>正在加载协作者...</p>
                 </div>
             `;
 
@@ -6869,7 +6872,7 @@
                 container.innerHTML = `
                     <div class="people-empty">
                         <div class="people-empty-icon">🔒</div>
-                        <p>Connect to GitHub to see team members</p>
+                        <p>连接 GitHub 以查看团队成员</p>
                     </div>
                 `;
                 return;
@@ -6897,7 +6900,7 @@
                     container.innerHTML = `
                         <div class="people-empty">
                             <div class="people-empty-icon">👤</div>
-                            <p>No collaborators found</p>
+                            <p>未找到协作者</p>
                         </div>
                     `;
                     return;
@@ -6912,8 +6915,8 @@
 
                 // Render stats
                 statsContainer.innerHTML = `
-                    <div class="people-stat"><strong>${collaborators.length}</strong> members</div>
-                    ${roleCounts.admin > 0 ? `<div class="people-stat"><strong>${roleCounts.admin}</strong> admins</div>` : ''}
+                    <div class="people-stat"><strong>${collaborators.length}</strong> 位成员</div>
+                    ${roleCounts.admin > 0 ? `<div class="people-stat"><strong>${roleCounts.admin}</strong> 位管理员</div>` : ''}
                 `;
 
                 // Render collaborator cards
@@ -6949,7 +6952,7 @@
                 container.innerHTML = `
                     <div class="people-empty">
                         <div class="people-empty-icon">⚠️</div>
-                        <p>Failed to load collaborators</p>
+                        <p>加载协作者失败</p>
                         <p style="font-size: 0.875rem; margin-top: 0.5rem;">${error.message}</p>
                     </div>
                 `;
@@ -7194,11 +7197,11 @@
                     await loadTasksFromGitHub();
                     if (!(await loadCronsFromGateway())) await loadCronsFromGitHub();
                 } else {
-                    errorDiv.textContent = 'Invalid token. Please check and try again.';
+                    errorDiv.textContent = '无效的令牌，请检查后重试。';
                     errorDiv.style.display = 'block';
                 }
             } catch (e) {
-                errorDiv.textContent = 'Connection error. Please try again.';
+                errorDiv.textContent = '连接错误，请重试。';
                 errorDiv.style.display = 'block';
             } finally {
                 loadingDiv.style.display = 'none';
